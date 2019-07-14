@@ -1,9 +1,34 @@
 /* =============
     Fundraising
 ============= */
+#fundraising {
+  > aside {
+    background-image: url("../img/icons/fundraising_icon.svg");
+  }
 
-#fundraising{
-aside{
-  background-image: url("../img/icons/fundraising_icon.svg");
-}
+  div {
+    aside {
+      h3 {
+        font-size: rem-calc(60);
+        color: $drkblu;
+      }
+
+      h4 {
+        color: $drkblu;
+        font-size: rem-calc(19);
+      }
+
+      #white-bg {
+        background-color: $white;
+        display: grid;
+        height: 9px;
+        margin: 10px 0 20px;
+        grid-template-columns: 62% auto;
+
+        div {
+          background-color: $drkblu;
+        }
+      }
+    }
+  }
 }

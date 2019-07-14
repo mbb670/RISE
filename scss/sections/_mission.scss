@@ -2,7 +2,8 @@
     Mission
 ============= */
 #mission{
-  aside{
+      // grid-template-rows: 150px;
+  > aside{
     background-image: url("../img/icons/mission_icon.svg");
   }
 }

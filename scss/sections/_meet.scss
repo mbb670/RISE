@@ -1,8 +1,66 @@
 /* =============
     Meet
 ============= */
-#meet{
-aside{
-  background-image: url("../img/icons/meet_icon.svg");
-}
+#meet {
+    padding-bottom: 60px;
+  > aside {
+    background-image: url("../img/icons/meet_icon.svg");
+  }
+
+  div {
+    ul {
+      display: grid;
+      grid-template-areas: "anna" "autumn" "maggie";
+      padding: 30px 0;
+      grid-auto-rows: 125px;
+
+      li {
+        font-family: "ivystyle-sans", sans-serif;
+        color: $white;
+        background-repeat: no-repeat;
+
+        article {
+          margin-top: 75px;
+
+          h5 {
+            font-size: rem-calc(18);
+            font-style: italic;
+          }
+
+          h6 {
+            font-weight: normal;
+            line-height: rem-calc(18);
+          }
+        }
+      }
+
+      li:nth-child(1) {
+        grid-area: anna;
+        background-image: url("../img/meet/anna.png");
+        background-size: rem-calc(120);
+        height: rem-calc(180);
+        background-position: 5px;
+      }
+
+      li:nth-child(2) {
+        grid-area: autumn;
+        background-image: url("../img/meet/autumn.png");
+        background-size: rem-calc(96);
+        height: rem-calc(209);
+        text-align: right;
+        background-position: 130px;
+      }
+
+      li:nth-child(3) {
+        grid-area: maggie;
+        background-image: url("../img/meet/maggie.png");
+        background-size: rem-calc(102);
+        height: rem-calc(188);
+        text-align: right;
+        background-position: 25px;
+        padding-right: 100px;
+
+      }
+    }
+  }
 }

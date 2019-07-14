@@ -2,7 +2,44 @@
     Gallery
 ============= */
 #gallery{
-aside{
+ > aside{
   background-image: url("../img/icons/gallery_icon.svg");
+}
+div{
+  ul {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-areas:
+      "gallery-1"
+      "gallery-2"
+      "gallery-3"
+      "gallery-4";
+      grid-template-rows: 156px 156px 100px 156px;
+
+      li {
+          background-size: cover;
+          height: 100%;
+      }
+
+      li:nth-child(1) {
+          background-image: url("../img/gallery/gallery_1.jpg");
+          grid-area: gallery-1;
+      }
+
+      li:nth-child(2) {
+          background-image: url("../img/gallery/gallery_3.jpg");
+          grid-area: gallery-2;
+      }
+
+      li:nth-child(3) {
+          background-image: url("../img/gallery/gallery_4.jpg");
+          grid-area: gallery-3;
+      }
+
+      li:nth-child(4) {
+          background-image: url("../img/gallery/gallery_5.jpg");
+          grid-area: gallery-4;
+      }
+  }
 }
 }
