@@ -18,3 +18,49 @@ a:link, a:visited{
     text-decoration: none;
     transition: 0.25s;
 }
+
+main{
+  background-color: $base;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-areas: ". side content .";
+  grid-template-columns: 10px 65px auto 10px;
+  padding: 60px 0;
+
+  > div {
+    grid-area: content;
+  }
+
+  > aside {
+    grid-area: side;
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: 5px;
+    height: rem-calc(50);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 160px;
+  }
+}
+
+p {
+  font-family: 'helvetica';
+  font-weight: bold;
+  font-size: rem-calc(16);
+  line-height: rem-calc(19);
+  color:$drkblu;
+}
+
+h2{
+  font-family: "ivystyle-sans", sans-serif;
+  font-size: rem-calc(30);
+  font-style: italic;
+  padding-bottom: 15px;
+  color:$drkblu;
+}
+
+span{
+  color:$white;
+}

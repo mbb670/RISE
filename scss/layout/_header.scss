@@ -1,3 +1,19 @@
 /* =============
     Header
 ============= */
+header{
+  padding: 10px;
+  position: fixed;
+  img{
+      height: rem-calc(96);
+  }
+
+  nav {
+  i {
+    font-size: rem-calc(35);
+    margin-top: 6px;
+    margin-left: 14px;
+    color: $drkblu;
+  }
+}
+}

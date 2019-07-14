@@ -1,0 +1,25 @@
+/* =============
+    hero
+============= */
+#hero-1 {
+  background-image: url("../img/hero/hero-1.jpg");
+  background-size: cover;
+  height: rem-calc(455);
+  background-repeat: no-repeat;
+}
+
+#hero-2 {
+  background-image: url("../img/hero/hero-2.jpg");
+  background-size: cover;
+  background-position: -80px 0;
+  height: rem-calc(773);
+  background-repeat: no-repeat;
+}
+
+#hero-3 {
+  background-image: url("../img/hero/hero-3.jpg");
+  background-size: cover;
+  background-position: -75px 0;
+  height: rem-calc(695);
+  background-repeat: no-repeat;
+}

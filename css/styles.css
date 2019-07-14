@@ -311,9 +311,63 @@ template {
 /* =============
     Base
 ============= */
+h1, h2, h3, h4, h5, p, figure {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+  ul li {
+    list-style: none; }
+
+a:link, a:visited {
+  text-decoration: none;
+  transition: 0.25s; }
+
+main {
+  background-color: #00D4FF; }
+
+.content-grid {
+  display: grid;
+  grid-template-areas: ". side content .";
+  grid-template-columns: 10px 65px auto 10px;
+  padding: 60px 0; }
+  .content-grid > div {
+    grid-area: content; }
+  .content-grid > aside {
+    grid-area: side;
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: 5px;
+    height: 3.125rem;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 160px; }
+
+p {
+  font-family: 'helvetica';
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  color: #191D4A; }
+
+h2 {
+  font-family: "ivystyle-sans", sans-serif;
+  font-size: 1.875rem;
+  font-style: italic;
+  padding-bottom: 15px;
+  color: #191D4A; }
+
+span {
+  color: #fff; }
+
 /* =============
     Typography
 ============= */
+body {
+  font-family: "helvetica", sans-serif; }
+
 /* =============
     Buttons
 ============= */
@@ -338,6 +392,69 @@ textarea {
 /* =============
     Header
 ============= */
+header {
+  padding: 10px;
+  position: fixed; }
+  header img {
+    height: 6rem; }
+  header nav i {
+    font-size: 2.1875rem;
+    margin-top: 6px;
+    margin-left: 14px;
+    color: #191D4A; }
+
 /* =============
     Footer
 ============= */
+/* =============
+    hero
+============= */
+#hero-1 {
+  background-image: url("../img/hero/hero-1.jpg");
+  background-size: cover;
+  height: 28.4375rem;
+  background-repeat: no-repeat; }
+
+#hero-2 {
+  background-image: url("../img/hero/hero-2.jpg");
+  background-size: cover;
+  background-position: -80px 0;
+  height: 48.3125rem;
+  background-repeat: no-repeat; }
+
+#hero-3 {
+  background-image: url("../img/hero/hero-3.jpg");
+  background-size: cover;
+  background-position: -75px 0;
+  height: 43.4375rem;
+  background-repeat: no-repeat; }
+
+/* =============
+    Mission
+============= */
+#mission aside {
+  background-image: url("../img/icons/mission_icon.svg"); }
+
+/* =============
+    About
+============= */
+#about aside {
+  background-image: url("../img/icons/about_icon.svg"); }
+
+/* =============
+    Fundraising
+============= */
+#fundraising aside {
+  background-image: url("../img/icons/fundraising_icon.svg"); }
+
+/* =============
+    Gallery
+============= */
+#gallery aside {
+  background-image: url("../img/icons/gallery_icon.svg"); }
+
+/* =============
+    Meet
+============= */
+#meet aside {
+  background-image: url("../img/icons/meet_icon.svg"); }
