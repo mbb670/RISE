@@ -9,8 +9,8 @@
   div {
     aside {
       h3 {
-        font-size: rem-calc(60);
         color: $drkblu;
+        font-size: rem-calc(60);
       }
 
       h4 {
@@ -21,9 +21,9 @@
       #white-bg {
         background-color: $white;
         display: grid;
+        grid-template-columns: 62% auto;
         height: 9px;
         margin: 10px 0 20px;
-        grid-template-columns: 62% auto;
 
         div {
           background-color: $drkblu;

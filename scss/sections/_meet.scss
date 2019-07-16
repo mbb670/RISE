@@ -2,7 +2,8 @@
     Meet
 ============= */
 #meet {
-    padding-bottom: 60px;
+  padding-bottom: 60px;
+
   > aside {
     background-image: url("../img/icons/meet_icon.svg");
   }
@@ -10,14 +11,14 @@
   div {
     ul {
       display: grid;
+      grid-auto-rows: 125px;
       grid-template-areas: "anna" "autumn" "maggie";
       padding: 30px 0;
-      grid-auto-rows: 125px;
 
       li {
-        font-family: "ivystyle-sans", sans-serif;
-        color: $white;
         background-repeat: no-repeat;
+        color: $white;
+        font-family: "ivystyle-sans", sans-serif;
 
         article {
           margin-top: 75px;
@@ -35,31 +36,30 @@
       }
 
       li:nth-child(1) {
-        grid-area: anna;
         background-image: url("../img/meet/anna.png");
-        background-size: rem-calc(120);
-        height: rem-calc(180);
         background-position: 5px;
+        background-size: rem-calc(120);
+        grid-area: anna;
+        height: rem-calc(180);
       }
 
       li:nth-child(2) {
-        grid-area: autumn;
         background-image: url("../img/meet/autumn.png");
+        background-position: 130px;
         background-size: rem-calc(96);
+        grid-area: autumn;
         height: rem-calc(209);
         text-align: right;
-        background-position: 130px;
       }
 
       li:nth-child(3) {
-        grid-area: maggie;
         background-image: url("../img/meet/maggie.png");
-        background-size: rem-calc(102);
-        height: rem-calc(188);
-        text-align: right;
         background-position: 25px;
+        background-size: rem-calc(102);
+        grid-area: maggie;
+        height: rem-calc(188);
         padding-right: 100px;
-
+        text-align: right;
       }
     }
   }

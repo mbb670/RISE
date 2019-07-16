@@ -1,9 +1,9 @@
 /* =============
     About
 ============= */
-#about{
-> aside{
-  background-image: url("../img/icons/about_icon.svg");
-}
-margin-bottom: 60px;
+#about {
+  margin-bottom: 60px;
+  > aside {
+    background-image: url("../img/icons/about_icon.svg");
+  }
 }

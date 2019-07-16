@@ -406,10 +406,10 @@ header {
   header img {
     height: 6rem; }
   header nav i {
+    color: #191D4A;
     font-size: 2.1875rem;
-    margin-top: 6px;
     margin-left: 14px;
-    color: #191D4A; }
+    margin-top: 6px; }
 
 /* =============
     Footer
@@ -435,29 +435,58 @@ footer > div {
 ============= */
 #hero-1 {
   background-image: url("../img/hero/hero-1.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
-  height: 28.4375rem;
-  background-repeat: no-repeat; }
+  height: 28.4375rem; }
+  #hero-1 ul {
+    padding: 380px 10px 0 200px; }
+    #hero-1 ul li {
+      display: block;
+      padding-bottom: 20px;
+      text-align: right;
+      width: 90px; }
+      #hero-1 ul li h4 {
+        color: #fff;
+        font-family: "ivystyle-sans", sans-serif;
+        font-style: italic;
+        font-weight: bold;
+        padding-bottom: 2px; }
+      #hero-1 ul li::after {
+        background-color: #fff;
+        content: '';
+        display: block;
+        height: 6px;
+        width: 90px; }
+    #hero-1 ul li:nth-last-child(2) {
+      padding-bottom: 10px; }
+    #hero-1 ul li:nth-last-child(1) i {
+      color: #fff;
+      font-size: 1.5625rem;
+      padding-left: 65px; }
+    #hero-1 ul li:nth-last-child(1)::after {
+      content: none; }
 
 #hero-2 {
   background-image: url("../img/hero/hero-2.jpg");
-  background-size: cover;
   background-position: -80px 0;
-  height: 48.3125rem;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 48.3125rem; }
 
 #hero-3 {
   background-image: url("../img/hero/hero-3.jpg");
-  background-size: cover;
   background-position: -75px 0;
-  height: 43.4375rem;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 43.4375rem; }
 
 /* =============
     Mission
 ============= */
-#mission > aside {
-  background-image: url("../img/icons/mission_icon.svg"); }
+#mission {
+  padding-top: 100px; }
+  #mission > aside {
+    background-image: url("../img/icons/mission_icon.svg"); }
 
 /* =============
     About
@@ -474,8 +503,8 @@ footer > div {
   background-image: url("../img/icons/fundraising_icon.svg"); }
 
 #fundraising div aside h3 {
-  font-size: 3.75rem;
-  color: #191D4A; }
+  color: #191D4A;
+  font-size: 3.75rem; }
 
 #fundraising div aside h4 {
   color: #191D4A;
@@ -484,9 +513,9 @@ footer > div {
 #fundraising div aside #white-bg {
   background-color: #fff;
   display: grid;
+  grid-template-columns: 62% auto;
   height: 9px;
-  margin: 10px 0 20px;
-  grid-template-columns: 62% auto; }
+  margin: 10px 0 20px; }
   #fundraising div aside #white-bg div {
     background-color: #191D4A; }
 
@@ -526,13 +555,13 @@ footer > div {
     background-image: url("../img/icons/meet_icon.svg"); }
   #meet div ul {
     display: grid;
+    grid-auto-rows: 125px;
     grid-template-areas: "anna" "autumn" "maggie";
-    padding: 30px 0;
-    grid-auto-rows: 125px; }
+    padding: 30px 0; }
     #meet div ul li {
-      font-family: "ivystyle-sans", sans-serif;
+      background-repeat: no-repeat;
       color: #fff;
-      background-repeat: no-repeat; }
+      font-family: "ivystyle-sans", sans-serif; }
       #meet div ul li article {
         margin-top: 75px; }
         #meet div ul li article h5 {
@@ -542,23 +571,23 @@ footer > div {
           font-weight: normal;
           line-height: 1.125rem; }
     #meet div ul li:nth-child(1) {
-      grid-area: anna;
       background-image: url("../img/meet/anna.png");
+      background-position: 5px;
       background-size: 7.5rem;
-      height: 11.25rem;
-      background-position: 5px; }
+      grid-area: anna;
+      height: 11.25rem; }
     #meet div ul li:nth-child(2) {
-      grid-area: autumn;
       background-image: url("../img/meet/autumn.png");
+      background-position: 130px;
       background-size: 6rem;
+      grid-area: autumn;
       height: 13.0625rem;
-      text-align: right;
-      background-position: 130px; }
+      text-align: right; }
     #meet div ul li:nth-child(3) {
-      grid-area: maggie;
       background-image: url("../img/meet/maggie.png");
-      background-size: 6.375rem;
-      height: 11.75rem;
-      text-align: right;
       background-position: 25px;
-      padding-right: 100px; }
+      background-size: 6.375rem;
+      grid-area: maggie;
+      height: 11.75rem;
+      padding-right: 100px;
+      text-align: right; }
