@@ -147,6 +147,17 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/img/Icons/Gradient.png": {
+		"ft": 32768,
+		"iS": 34391,
+		"oA": 0,
+		"oAP": "/img/Icons/Gradient.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/img/Icons/Meet_Icon.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -450,6 +461,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/scss/sections/_mission.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/scss/sections/_vertical-type.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/scss/sections/_vertical-type.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

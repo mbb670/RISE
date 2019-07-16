@@ -454,6 +454,22 @@ footer > div {
   background-repeat: no-repeat; }
 
 /* =============
+    Vertical Type
+============= */
+#vert {
+  position: absolute;
+  width: 523vh;
+  left: -4275px;
+  top: -20px;
+  transform: rotate(-90deg);
+  transform-origin: right bottom; }
+  #vert div::before {
+    content: 'Sign Up To Make A Difference;';
+    background-color: red;
+    display: block;
+    overflow: visible; }
+
+/* =============
     Mission
 ============= */
 #mission > aside {
