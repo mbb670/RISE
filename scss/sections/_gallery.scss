@@ -39,4 +39,12 @@
       }
     }
   }
+
+  @include sm{
+    div{
+      ul{
+        grid-template-rows: 250px 250px 170px 250px;
+      }
+    }
+  }
 }

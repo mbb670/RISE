@@ -352,6 +352,11 @@ main {
     position: -webkit-sticky;
     position: sticky;
     top: 160px; }
+  @media (min-width: 500px) {
+    .content-grid {
+      grid-template-columns: 20px 75px auto 20px; }
+      .content-grid > aside {
+        top: 170px; } }
 
 p {
   color: #191D4A;
@@ -416,6 +421,9 @@ header {
     font-size: 2.1875rem;
     margin-left: 14px;
     margin-top: 6px; }
+  @media (min-width: 500px) {
+    header {
+      padding: 20px; } }
 
 /* =============
     Footer
@@ -471,6 +479,11 @@ footer > div {
       padding-left: 65px; }
     #hero-1 ul li:nth-last-child(1)::after {
       content: none; }
+  @media (min-width: 500px) {
+    #hero-1 {
+      height: 43.75rem; }
+      #hero-1 ul {
+        padding: 570px 0 0 370px; } }
 
 #hero-2 {
   background-image: url("../img/hero/hero-2.jpg");
@@ -478,6 +491,10 @@ footer > div {
   background-repeat: no-repeat;
   background-size: cover;
   height: 48.3125rem; }
+  @media (min-width: 500px) {
+    #hero-2 {
+      height: 51.875rem;
+      background-position: 0; } }
 
 #hero-3 {
   background-image: url("../img/hero/hero-3.jpg");
@@ -485,6 +502,9 @@ footer > div {
   background-repeat: no-repeat;
   background-size: cover;
   height: 43.4375rem; }
+  @media (min-width: 500px) {
+    #hero-3 {
+      background-position: 0; } }
 
 /* =============
     Mission
@@ -513,17 +533,24 @@ footer > div {
   font-size: 3.75rem; }
 
 #fundraising div aside h4 {
-  color: #191D4A;
+  color: #fff;
   font-size: 1.1875rem; }
 
-#fundraising div aside #white-bg {
+#fundraising div #white-bg {
   background-color: #fff;
   display: grid;
   grid-template-columns: 62% auto;
   height: 9px;
   margin: 10px 0 20px; }
-  #fundraising div aside #white-bg div {
+  #fundraising div #white-bg div {
     background-color: #191D4A; }
+
+@media (min-width: 500px) {
+  #fundraising div aside {
+    display: flex; }
+    #fundraising div aside h4 {
+      font-size: 1.375rem;
+      margin: 7px 0 0 15px; } }
 
 /* =============
     Gallery
@@ -551,6 +578,10 @@ footer > div {
   #gallery div ul li:nth-child(4) {
     background-image: url("../img/gallery/gallery_5.jpg");
     grid-area: gallery-4; }
+
+@media (min-width: 500px) {
+  #gallery div ul {
+    grid-template-rows: 250px 250px 170px 250px; } }
 
 /* =============
     Meet
@@ -608,3 +639,31 @@ footer > div {
       #meet div ul li:nth-child(3) article {
         top: 65px;
         left: 35px; }
+  @media (min-width: 500px) {
+    #meet {
+      margin-bottom: 90px; }
+      #meet div ul {
+        grid-auto-rows: 125px; }
+        #meet div ul li article h5 {
+          font-size: 1.25rem; }
+        #meet div ul li article h6 {
+          font-size: 1.125rem;
+          line-height: 1.625rem; }
+        #meet div ul li:nth-child(1) img {
+          height: 15.9375rem; }
+        #meet div ul li:nth-child(1) article {
+          top: 80px;
+          left: 65px; }
+        #meet div ul li:nth-child(2) img {
+          height: 17.75rem;
+          left: 220px; }
+        #meet div ul li:nth-child(2) article {
+          top: 95px;
+          left: 140px; }
+        #meet div ul li:nth-child(3) img {
+          height: 16.4375rem;
+          top: 10px;
+          left: 40px; }
+        #meet div ul li:nth-child(3) article {
+          top: 95px;
+          left: 75px; } }

@@ -40,7 +40,7 @@ main {
 
   > div {
     grid-area: content;
-  }
+      }
 
   > aside {
     background-position: rem-calc(5);
@@ -52,6 +52,13 @@ main {
     position: sticky;
     top: 160px;
   }
+
+  @include sm{
+      grid-template-columns: 20px 75px auto 20px;
+      >aside{
+        top:170px;
+      }
+    }
 }
 
 p {

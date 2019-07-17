@@ -50,8 +50,8 @@
         }
 
         article {
-          top:60px;
-          left:45px;
+          top: 60px;
+          left: 45px;
         }
       }
 
@@ -62,12 +62,12 @@
 
         img {
           height: rem-calc(209);
-          left:120px;
+          left: 120px;
         }
 
         article {
-        top:75px;
-        left:35px;
+          top: 75px;
+          left: 35px;
         }
       }
 
@@ -77,40 +77,73 @@
 
         img {
           height: rem-calc(188);
-          top:-10px;
-          left:15px;
+          top: -10px;
+          left: 15px;
         }
 
         article {
-          top:65px;
-          left:35px;
+          top: 65px;
+          left: 35px;
+        }
+      }
+    }
+  }
+  @include sm {
+    margin-bottom: 90px;
+    div {
+      ul {
+        grid-auto-rows: 125px;
+
+        li {
+          article {
+            h5 {
+              font-size: rem-calc(20);
+            }
+
+            h6 {
+              font-size: rem-calc(18);
+              line-height: rem-calc(26);
+            }
+          }
+        }
+
+        li:nth-child(1) {
+          img {
+            height: rem-calc(255);
+          }
+
+          article {
+            top: 80px;
+            left: 65px;
+          }
+        }
+
+        li:nth-child(2) {
+
+          img {
+            height: rem-calc(284);
+            left: 220px;
+          }
+
+          article {
+            top: 95px;
+            left: 140px;
+          }
+        }
+
+        li:nth-child(3) {
+          img {
+            height: rem-calc(263);
+            top: 10px;
+            left: 40px;
+          }
+
+          article {
+            top: 95px;
+            left: 75px;
+          }
         }
       }
     }
   }
 }
-// li:nth-child(1) {
-//   background-image: url("../img/meet/anna.png");
-//   background-position: 5px;
-//   background-size: rem-calc(120);
-//   grid-area: anna;
-//   height: rem-calc(180);
-// }
-//
-// li:nth-child(2) {
-//   background-image: url("../img/meet/autumn.png");
-//   background-position: 130px;
-//   background-size: rem-calc(96);
-//   grid-area: autumn;
-//   height: rem-calc(209);
-//   text-align: right;
-// }
-// li:nth-child(3) {
-//   background-image: url("../img/meet/maggie.png");
-//   background-position: 25px;
-//   background-size: rem-calc(102);
-//   grid-area: maggie;
-//   height: rem-calc(188);
-//   padding-right: 100px;
-//   text-align: right;
-// }

@@ -14,19 +14,31 @@
       }
 
       h4 {
-        color: $drkblu;
+        color: $white;
         font-size: rem-calc(19);
       }
+    }
 
-      #white-bg {
-        background-color: $white;
-        display: grid;
-        grid-template-columns: 62% auto;
-        height: 9px;
-        margin: 10px 0 20px;
+    #white-bg {
+      background-color: $white;
+      display: grid;
+      grid-template-columns: 62% auto;
+      height: 9px;
+      margin: 10px 0 20px;
 
-        div {
-          background-color: $drkblu;
+      div {
+        background-color: $drkblu;
+      }
+    }
+  }
+
+  @include sm{
+    div{
+      aside{
+        display: flex;
+        h4{
+          font-size: rem-calc(22);
+          margin:7px 0 0 15px;
         }
       }
     }
