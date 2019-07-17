@@ -62,6 +62,13 @@ p {
   line-height: rem-calc(19);
 }
 
+h1{
+  color: $white;
+  font-weight: bold;
+  font-size: rem-calc(45);
+  display: none;
+}
+
 h2 {
   color: $drkblu;
   font-family: "ivystyle-sans", sans-serif;

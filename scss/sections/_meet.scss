@@ -16,12 +16,14 @@
       padding: 30px 0;
 
       li {
-        background-repeat: no-repeat;
         color: $white;
         font-family: "ivystyle-sans", sans-serif;
+        display: flex;
+        position: relative;
 
         article {
-          margin-top: 75px;
+          z-index: 3;
+          position: absolute;
 
           h5 {
             font-size: rem-calc(18);
@@ -33,34 +35,82 @@
             line-height: rem-calc(18);
           }
         }
+
+        img {
+          z-index: 2;
+          position: absolute;
+        }
       }
 
       li:nth-child(1) {
-        background-image: url("../img/meet/anna.png");
-        background-position: 5px;
-        background-size: rem-calc(120);
         grid-area: anna;
-        height: rem-calc(180);
+
+        img {
+          height: rem-calc(180);
+        }
+
+        article {
+          top:60px;
+          left:45px;
+        }
       }
 
       li:nth-child(2) {
-        background-image: url("../img/meet/autumn.png");
-        background-position: 130px;
-        background-size: rem-calc(96);
+        margin-top: -5px;
         grid-area: autumn;
-        height: rem-calc(209);
         text-align: right;
+
+        img {
+          height: rem-calc(209);
+          left:120px;
+        }
+
+        article {
+        top:75px;
+        left:35px;
+        }
       }
 
       li:nth-child(3) {
-        background-image: url("../img/meet/maggie.png");
-        background-position: 25px;
-        background-size: rem-calc(102);
+        margin-top: 10px;
         grid-area: maggie;
-        height: rem-calc(188);
-        padding-right: 100px;
-        text-align: right;
+
+        img {
+          height: rem-calc(188);
+          top:-10px;
+          left:15px;
+        }
+
+        article {
+          top:65px;
+          left:35px;
+        }
       }
     }
   }
 }
+// li:nth-child(1) {
+//   background-image: url("../img/meet/anna.png");
+//   background-position: 5px;
+//   background-size: rem-calc(120);
+//   grid-area: anna;
+//   height: rem-calc(180);
+// }
+//
+// li:nth-child(2) {
+//   background-image: url("../img/meet/autumn.png");
+//   background-position: 130px;
+//   background-size: rem-calc(96);
+//   grid-area: autumn;
+//   height: rem-calc(209);
+//   text-align: right;
+// }
+// li:nth-child(3) {
+//   background-image: url("../img/meet/maggie.png");
+//   background-position: 25px;
+//   background-size: rem-calc(102);
+//   grid-area: maggie;
+//   height: rem-calc(188);
+//   padding-right: 100px;
+//   text-align: right;
+// }
