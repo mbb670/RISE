@@ -32,4 +32,18 @@ header {
       }
     }
   }
+  @include lg {
+    padding: 60px;
+
+    img {
+      height: rem-calc(200);
+    }
+
+    nav {
+      i {
+        font-size: rem-calc(65);
+        margin-left: 30px;
+      }
+    }
+  }
 }

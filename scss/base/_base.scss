@@ -69,6 +69,16 @@ main {
       top: 245px;
     }
   }
+  @include lg {
+    grid-template-columns: 50px 190px auto 50px;
+
+    > aside {
+      background-size: 125px;
+      height: rem-calc(125);
+      left: 10px;
+      top: 345px;
+    }
+  }
 }
 
 p {
@@ -101,6 +111,9 @@ h2 {
   padding-bottom: 15px;
   @include md {
     font-size: rem-calc(60);
+  }
+  @include lg {
+    font-size: rem-calc(75);
   }
 }
 

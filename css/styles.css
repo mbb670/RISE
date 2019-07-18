@@ -365,6 +365,14 @@ main {
         height: 4.6875rem;
         left: 23px;
         top: 245px; } }
+  @media (min-width: 890px) {
+    .content-grid {
+      grid-template-columns: 50px 190px auto 50px; }
+      .content-grid > aside {
+        background-size: 125px;
+        height: 7.8125rem;
+        left: 10px;
+        top: 345px; } }
 
 p {
   color: #191D4A;
@@ -395,6 +403,9 @@ h2 {
   @media (min-width: 675px) {
     h2 {
       font-size: 3.75rem; } }
+  @media (min-width: 890px) {
+    h2 {
+      font-size: 4.6875rem; } }
 
 span {
   color: #fff; }
@@ -448,6 +459,14 @@ header {
     header nav i {
       font-size: 3.125rem;
       margin-left: 22px; } }
+  @media (min-width: 890px) {
+    header {
+      padding: 60px; }
+      header img {
+        height: 12.5rem; }
+      header nav i {
+        font-size: 4.0625rem;
+        margin-left: 30px; } }
 
 /* =============
     Footer
@@ -521,6 +540,11 @@ footer > div {
           width: 133px; }
           #hero-1 ul li::after {
             width: 133px; } }
+  @media (min-width: 890px) {
+    #hero-1 {
+      height: 39.125rem; }
+      #hero-1 ul {
+        padding: 50% 0 0 78%; } }
 
 #hero-2 {
   background-image: url("../img/hero/hero-2.jpg");
@@ -588,43 +612,65 @@ footer > div {
 #fundraising > aside {
   background-image: url("../img/icons/fundraising_icon.svg"); }
 
-#fundraising div aside h3 {
+#fundraising > div > div aside h3 {
   color: #191D4A;
   font-size: 3.75rem; }
 
-#fundraising div aside h4 {
+#fundraising > div > div aside h4 {
   color: #fff;
   font-size: 1.1875rem; }
 
-#fundraising div #white-bg {
+#fundraising > div > div #white-bg {
   background-color: #fff;
   display: grid;
   grid-template-columns: 62% auto;
   height: 9px;
   margin: 10px 0 20px; }
-  #fundraising div #white-bg div {
+  #fundraising > div > div #white-bg div {
     background-color: #191D4A; }
 
 @media (min-width: 500px) {
-  #fundraising div aside {
+  #fundraising > div > div aside {
     display: grid;
     grid-template-areas: "num txt"; }
-    #fundraising div aside h3 {
+    #fundraising > div > div aside h3 {
       grid-area: num; }
-    #fundraising div aside h4 {
+    #fundraising > div > div aside h4 {
       font-size: 1.375rem;
       grid-area: txt;
       margin: 7px 0 0 15px; } }
 
 @media (min-width: 675px) {
-  #fundraising div aside {
+  #fundraising > div > div aside {
     grid-template-areas: "txt num"; }
-    #fundraising div aside h3 {
+    #fundraising > div > div aside h3 {
       font-size: 6.25rem; }
-    #fundraising div aside h4 {
+    #fundraising > div > div aside h4 {
       font-size: 1.625rem;
       margin: 15px 20px 0 0;
       text-align: right; } }
+
+@media (min-width: 890px) {
+  #fundraising > div > div {
+    display: grid;
+    grid-template-areas: "f-aside f-article" "f-bar f-bar";
+    grid-template-columns: repeat(2, 1fr); }
+    #fundraising > div > div aside {
+      display: flex;
+      flex-direction: column;
+      flex-direction: column-reverse;
+      grid-area: f-aside;
+      grid-gap: 25px; }
+      #fundraising > div > div aside h3 {
+        font-size: 5rem; }
+      #fundraising > div > div aside h4 {
+        font-size: 2.8125rem;
+        margin-top: -5px; }
+    #fundraising > div > div article {
+      grid-area: f-article; }
+    #fundraising > div > div > div {
+      grid-area: f-bar;
+      margin-top: 20px; } }
 
 /* =============
     Gallery

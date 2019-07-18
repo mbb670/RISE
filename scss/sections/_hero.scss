@@ -75,6 +75,13 @@
       }
     }
   }
+  @include lg {
+    height: rem-calc(626);
+
+    ul {
+      padding: 50% 0 0 78%;
+    }
+  }
 }
 
 #hero-2 {
