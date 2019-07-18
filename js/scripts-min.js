@@ -1,0 +1,1 @@
+$(document).ready(function(){var e=$("#vert-type"),t=$("#test");TweenMax.set(e,{y:-460,x:180,rotation:-90,transformOrigin:"center center"}),TweenMax.to(t,100,{x:1e3})});

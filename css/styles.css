@@ -813,3 +813,16 @@ footer > div {
       #meet div ul li:nth-child(3) article {
         left: 175px;
         top: 160px; } }
+
+/* =============
+    Vert-Type
+============= */
+#vert-type div {
+  display: block;
+  width: 10000px; }
+  #vert-type div p {
+    font-size: 3.75rem;
+    font-weight: bold;
+    color: #fff; }
+    #vert-type div p span {
+      margin-right: 600px; }
