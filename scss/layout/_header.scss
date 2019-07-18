@@ -17,8 +17,19 @@ header {
       margin-top: 6px;
     }
   }
-
-  @include sm{
+  @include sm {
     padding: 20px;
+  }
+  @include md {
+    img {
+      height: rem-calc(155);
+    }
+
+    nav {
+      i {
+        font-size: rem-calc(50);
+        margin-left: 22px;
+      }
+    }
   }
 }

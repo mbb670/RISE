@@ -3,7 +3,22 @@
 ============= */
 #about {
   margin-bottom: 60px;
+
   > aside {
     background-image: url("../img/icons/about_icon.svg");
+  }
+  @include md {
+    div {
+      div {
+        display: flex;
+
+        h1 {}
+
+        p {
+          margin-right: 20px;
+          text-align: left;
+        }
+      }
+    }
   }
 }

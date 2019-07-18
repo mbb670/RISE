@@ -17,13 +17,13 @@
 
       li {
         color: $white;
-        font-family: "ivystyle-sans", sans-serif;
         display: flex;
+        font-family: "ivystyle-sans", sans-serif;
         position: relative;
 
         article {
-          z-index: 3;
           position: absolute;
+          z-index: 3;
 
           h5 {
             font-size: rem-calc(18);
@@ -37,8 +37,8 @@
         }
 
         img {
-          z-index: 2;
           position: absolute;
+          z-index: 2;
         }
       }
 
@@ -50,14 +50,14 @@
         }
 
         article {
-          top: 60px;
           left: 45px;
+          top: 60px;
         }
       }
 
       li:nth-child(2) {
-        margin-top: -5px;
         grid-area: autumn;
+        margin-top: -5px;
         text-align: right;
 
         img {
@@ -66,34 +66,33 @@
         }
 
         article {
-          top: 75px;
           left: 35px;
+          top: 75px;
         }
       }
 
       li:nth-child(3) {
-        margin-top: 10px;
         grid-area: maggie;
+        margin-top: 10px;
 
         img {
           height: rem-calc(188);
-          top: -10px;
           left: 15px;
+          top: -10px;
         }
 
         article {
-          top: 65px;
           left: 35px;
+          top: 65px;
         }
       }
     }
   }
   @include sm {
     margin-bottom: 90px;
+
     div {
       ul {
-        grid-auto-rows: 125px;
-
         li {
           article {
             h5 {
@@ -113,34 +112,77 @@
           }
 
           article {
-            top: 80px;
             left: 65px;
+            top: 80px;
           }
         }
 
         li:nth-child(2) {
-
           img {
             height: rem-calc(284);
             left: 220px;
           }
 
           article {
-            top: 95px;
             left: 140px;
+            top: 95px;
           }
         }
 
         li:nth-child(3) {
           img {
             height: rem-calc(263);
-            top: 10px;
             left: 40px;
+            top: 10px;
           }
 
           article {
-            top: 95px;
             left: 75px;
+            top: 95px;
+          }
+        }
+      }
+    }
+  }
+  @include md {
+    margin-bottom: 200px;
+
+    div {
+      ul {
+        li:nth-child(1) {
+          img {
+            height: rem-calc(310);
+            left: 55px;
+          }
+
+          article {
+            left: 140px;
+            top: 100px;
+          }
+        }
+
+        li:nth-child(2) {
+          img {
+            height: rem-calc(360);
+            left: 320px;
+          }
+
+          article {
+            left: 260px;
+            top: 120px;
+          }
+        }
+
+        li:nth-child(3) {
+          img {
+            height: rem-calc(325);
+            left: 130px;
+            top: 60px;
+          }
+
+          article {
+            left: 175px;
+            top: 160px;
           }
         }
       }

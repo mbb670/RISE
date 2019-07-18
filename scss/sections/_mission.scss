@@ -3,8 +3,21 @@
 ============= */
 #mission {
   padding-top: 100px;
-  // grid-template-rows: 150px;
   > aside {
     background-image: url("../img/icons/mission_icon.svg");
+  }
+
+  @include md{
+    div{
+      div{
+        display: flex;
+        h1{
+text-align: left;
+        }
+        p{
+          margin-left: 20px;
+        }
+      }
+    }
   }
 }

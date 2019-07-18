@@ -56,6 +56,25 @@
       padding: 570px 0 0 370px;
     }
   }
+  @include md {
+    background-position: center;
+    background-size: contain;
+    height: rem-calc(595);
+    padding-top: 20px;
+
+    ul {
+      padding: 65% 0 0 70%;
+
+      li {
+        font-size: rem-calc(28);
+        width: 133px;
+
+        &::after {
+          width: 133px;
+        }
+      }
+    }
+  }
 }
 
 #hero-2 {
@@ -65,8 +84,13 @@
   background-size: cover;
   height: rem-calc(773);
   @include sm {
-    height: rem-calc(830);
     background-position: 0;
+    height: rem-calc(830);
+  }
+  @include md {
+    background-position: 65%;
+    background-size: contain;
+    height: rem-calc(600);
   }
 }
 
@@ -78,5 +102,10 @@
   height: rem-calc(695);
   @include sm {
     background-position: 0;
+  }
+  @include md {
+    background-position: 65%;
+    background-size: contain;
+    height: rem-calc(611);
   }
 }

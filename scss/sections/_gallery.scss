@@ -39,11 +39,19 @@
       }
     }
   }
-
-  @include sm{
-    div{
-      ul{
+  @include sm {
+    div {
+      ul {
         grid-template-rows: 250px 250px 170px 250px;
+      }
+    }
+  }
+  @include md {
+    div {
+      ul {
+        grid-template-areas: "gallery-1 gallery-4" "gallery-1 gallery-2" "gallery-3 gallery-2";
+        grid-template-columns: 64% 36%;
+        grid-template-rows: 145px 107px 171px;
       }
     }
   }
