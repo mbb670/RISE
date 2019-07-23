@@ -55,4 +55,13 @@
       }
     }
   }
+  @include xl {
+    div {
+      ul {
+        grid-template-areas: "gallery-3 gallery-3" "gallery-1 gallery-2" "gallery-4 gallery-2";
+        grid-template-columns: 64% 36%;
+        grid-template-rows: 446px 394px 398px;
+      }
+    }
+  }
 }

@@ -26,4 +26,16 @@ footer {
       }
     }
   }
+  @include xl {
+    > div {
+      ul {
+        li {
+          a:link,
+          a:visited {
+            font-size: rem-calc(50);
+          }
+        }
+      }
+    }
+  }
 }

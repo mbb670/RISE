@@ -12,11 +12,18 @@
       div {
         display: flex;
 
-        h1 {}
-
         p {
           margin-right: 20px;
-          text-align: left;
+          text-align: right;
+        }
+      }
+    }
+  }
+  @include xl {
+    div {
+      div {
+        p {
+          margin-right: 40px;
         }
       }
     }

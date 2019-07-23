@@ -6,9 +6,14 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: rem-calc(455);
+  position: relative;
+  z-index: 4;
 
   ul {
-    padding: 380px 10px 0 200px;
+    left: 60%;
+    // padding: 380px 10px 0 200px;
+    position: absolute;
+    top: 85%;
 
     li {
       display: block;
@@ -53,7 +58,8 @@
     height: rem-calc(700);
 
     ul {
-      padding: 570px 0 0 370px;
+      left: 75%;
+      top: 80%;
     }
   }
   @include md {
@@ -63,8 +69,6 @@
     padding-top: 20px;
 
     ul {
-      padding: 65% 0 0 70%;
-
       li {
         font-size: rem-calc(28);
         width: 133px;
@@ -78,41 +82,62 @@
   @include lg {
     height: rem-calc(626);
 
+    ul {}
+  }
+  @include xl {
+    height: rem-calc(851);
+    margin-top: 40px;
+
     ul {
-      padding: 50% 0 0 78%;
+      left: 70%;
+      top: 60%;
+
+      li {
+        font-size: rem-calc(42);
+        width: 188px;
+
+        &::after {
+          height: 9px;
+          width: 188px;
+        }
+      }
     }
   }
 }
 
 #hero-2 {
   background-image: url("../img/hero/hero-2.jpg");
-  background-position: -80px 0;
+  background-position: 65%;
   background-repeat: no-repeat;
   background-size: cover;
   height: rem-calc(773);
   @include sm {
-    background-position: 0;
     height: rem-calc(830);
   }
   @include md {
-    background-position: 65%;
     background-size: contain;
     height: rem-calc(600);
+  }
+  @include xl {
+    background-position: center;
+    height: rem-calc(900);
+    margin-top: 40px;
   }
 }
 
 #hero-3 {
   background-image: url("../img/hero/hero-3.jpg");
-  background-position: -75px 0;
+  background-position: 65%;
   background-repeat: no-repeat;
   background-size: cover;
   height: rem-calc(695);
-  @include sm {
-    background-position: 0;
-  }
   @include md {
-    background-position: 65%;
     background-size: contain;
     height: rem-calc(611);
+    @include xl {
+      background-position: center;
+      height: rem-calc(900);
+      margin-top: 40px;
+    }
   }
 }

@@ -107,4 +107,33 @@
       }
     }
   }
+  @include xl {
+    > div {
+      > div {
+        grid-template-areas: "f-aside f-article" "f-aside f-bar";
+
+        aside {
+          margin-right: 40px;
+
+          h3 {
+            text-align: right;
+          }
+
+          h4 {
+            font-size: rem-calc(80);
+          }
+        }
+
+        > div {
+          grid-area: f-bar;
+          margin-top: 20px;
+        }
+
+        #white-bg {
+          height: 12px;
+          margin-top: 40px;
+        }
+      }
+    }
+  }
 }

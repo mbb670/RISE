@@ -2,47 +2,68 @@
     Header
 ============= */
 header {
-  padding: 10px;
-  position: fixed;
+  padding-top: 0 !important;
 
-  img {
-    height: rem-calc(96);
-  }
+  section {
+    left: 4%;
+    padding-top: 6%;
+    position: fixed;
+    z-index: 5;
 
-  nav {
-    i {
-      color: $drkblu;
-      font-size: rem-calc(35);
-      margin-left: 14px;
-      margin-top: 6px;
-    }
-  }
-  @include sm {
-    padding: 20px;
-  }
-  @include md {
     img {
-      height: rem-calc(155);
+      height: rem-calc(96);
     }
 
     nav {
       i {
-        font-size: rem-calc(50);
-        margin-left: 22px;
+        color: $drkblu;
+        font-size: rem-calc(35);
+        margin-left: 14px;
+        margin-top: 6px;
       }
     }
-  }
-  @include lg {
-    padding: 60px;
-
-    img {
-      height: rem-calc(200);
+    @include sm {
+      left: 7%;
     }
+    @include md {
+      left: 5%;
 
-    nav {
-      i {
-        font-size: rem-calc(65);
-        margin-left: 30px;
+      img {
+        height: rem-calc(155);
+      }
+
+      nav {
+        i {
+          font-size: rem-calc(50);
+          margin-left: 22px;
+        }
+      }
+    }
+    @include lg {
+      img {
+        height: rem-calc(200);
+      }
+
+      nav {
+        i {
+          font-size: rem-calc(65);
+          margin-left: 30px;
+        }
+      }
+    }
+    @include xl {
+      left: 50%;
+      transform: translateX(-520px);
+
+      img {
+        height: rem-calc(260);
+      }
+
+      nav {
+        i {
+          font-size: rem-calc(75);
+          margin-left: 50px;
+        }
       }
     }
   }
