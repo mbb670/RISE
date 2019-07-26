@@ -2,30 +2,27 @@
     About
 ============= */
 #about {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
 
-  > aside {
-    background-image: url("../img/icons/about_icon.svg");
-  }
-  @include md {
-    div {
-      div {
-        display: flex;
+    > aside {
+        background-image: url("../img/icons/about_icon.svg");
+    }
 
-        p {
-          margin-right: 20px;
-          text-align: right;
-        }
-      }
-    }
-  }
-  @include xl {
     div {
-      div {
-        p {
-          margin-right: 40px;
+        div {
+            @include md {
+                display: flex;
+            }
+
+            p {
+                @include md {
+                    margin-right: 20px;
+                    text-align: right;
+                }
+                @include xl {
+                    margin-right: 40px;
+                }
+            }
         }
-      }
     }
-  }
 }

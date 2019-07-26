@@ -2,66 +2,54 @@
     Gallery
 ============= */
 #gallery {
-  > aside {
-    background-image: url("../img/icons/gallery_icon.svg");
-  }
-
-  div {
-    ul {
-      display: grid;
-      grid-gap: 10px;
-      grid-template-areas: "gallery-1" "gallery-2" "gallery-3" "gallery-4";
-      grid-template-rows: 156px 156px 100px 156px;
-
-      li {
-        background-size: cover;
-        height: 100%;
-      }
-
-      li:nth-child(1) {
-        background-image: url("../img/gallery/gallery_1.jpg");
-        grid-area: gallery-1;
-      }
-
-      li:nth-child(2) {
-        background-image: url("../img/gallery/gallery_3.jpg");
-        grid-area: gallery-2;
-      }
-
-      li:nth-child(3) {
-        background-image: url("../img/gallery/gallery_4.jpg");
-        grid-area: gallery-3;
-      }
-
-      li:nth-child(4) {
-        background-image: url("../img/gallery/gallery_5.jpg");
-        grid-area: gallery-4;
-      }
+    > aside {
+        background-image: url("../img/icons/gallery_icon.svg");
     }
-  }
-  @include sm {
+
     div {
-      ul {
-        grid-template-rows: 250px 250px 170px 250px;
-      }
+        ul {
+            display: grid;
+            grid-gap: 10px;
+            grid-template-areas: "gallery-1" "gallery-2" "gallery-3" "gallery-4";
+            grid-template-rows: 156px 156px 100px 156px;
+            @include sm {
+                grid-template-rows: 250px 250px 170px 250px;
+            }
+            @include md {
+                grid-template-areas: "gallery-1 gallery-4" "gallery-1 gallery-2" "gallery-3 gallery-2";
+                grid-template-columns: 64% 36%;
+                grid-template-rows: 145px 107px 171px;
+            }
+            @include xl {
+                grid-template-areas: "gallery-3 gallery-3" "gallery-1 gallery-2" "gallery-4 gallery-2";
+                grid-template-columns: 64% 36%;
+                grid-template-rows: 446px 394px 398px;
+            }
+
+            li {
+                background-size: cover;
+                height: 100%;
+            }
+
+            li:nth-child(1) {
+                background-image: url("../img/gallery/gallery_1.jpg");
+                grid-area: gallery-1;
+            }
+
+            li:nth-child(2) {
+                background-image: url("../img/gallery/gallery_3.jpg");
+                grid-area: gallery-2;
+            }
+
+            li:nth-child(3) {
+                background-image: url("../img/gallery/gallery_4.jpg");
+                grid-area: gallery-3;
+            }
+
+            li:nth-child(4) {
+                background-image: url("../img/gallery/gallery_5.jpg");
+                grid-area: gallery-4;
+            }
+        }
     }
-  }
-  @include md {
-    div {
-      ul {
-        grid-template-areas: "gallery-1 gallery-4" "gallery-1 gallery-2" "gallery-3 gallery-2";
-        grid-template-columns: 64% 36%;
-        grid-template-rows: 145px 107px 171px;
-      }
-    }
-  }
-  @include xl {
-    div {
-      ul {
-        grid-template-areas: "gallery-3 gallery-3" "gallery-1 gallery-2" "gallery-4 gallery-2";
-        grid-template-columns: 64% 36%;
-        grid-template-rows: 446px 394px 398px;
-      }
-    }
-  }
 }

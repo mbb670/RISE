@@ -2,138 +2,105 @@
     Fundraising
 ============= */
 #fundraising {
-  > aside {
-    background-image: url("../img/icons/fundraising_icon.svg");
-  }
-
-  > div {
-    > div {
-      aside {
-        h3 {
-          color: $drkblu;
-          font-size: rem-calc(60);
-        }
-
-        h4 {
-          color: $white;
-          font-size: rem-calc(19);
-        }
-      }
-
-      #white-bg {
-        background-color: $white;
-        display: grid;
-        grid-template-columns: 62% auto;
-        height: 9px;
-        margin: 10px 0 20px;
-
-        div {
-          background-color: $drkblu;
-        }
-      }
+    > aside {
+        background-image: url("../img/icons/fundraising_icon.svg");
     }
-  }
-  @include sm {
+
     > div {
-      > div {
-        aside {
-          display: grid;
-          grid-template-areas: "num txt";
-
-          h3 {
-            grid-area: num;
-          }
-
-          h4 {
-            font-size: rem-calc(22);
-            grid-area: txt;
-            margin: 7px 0 0 15px;
-          }
-        }
-      }
-    }
-  }
-  @include md {
-    > div {
-      > div {
-        aside {
-          grid-template-areas: "txt num";
-
-          h3 {
-            font-size: rem-calc(100);
-          }
-
-          h4 {
-            font-size: rem-calc(26);
-            margin: 15px 20px 0 0;
-            text-align: right;
-          }
-        }
-      }
-    }
-  }
-  @include lg {
-    > div {
-      > div {
-        display: grid;
-        grid-template-areas: "f-aside f-article" "f-bar f-bar";
-        grid-template-columns: repeat(2, 1fr);
-
-        aside {
-          display: flex;
-          flex-direction: column;
-          flex-direction: column-reverse;
-          grid-area: f-aside;
-          grid-gap: 25px;
-
-          h3 {
-            font-size: rem-calc(80);
-          }
-
-          h4 {
-            font-size: rem-calc(45);
-            margin-top: -5px;
-          }
-        }
-
-        article {
-          grid-area: f-article;
-        }
-
         > div {
-          grid-area: f-bar;
-          margin-top: 20px;
+            @include lg {
+                display: grid;
+                grid-template-areas: "f-aside f-article" "f-bar f-bar";
+                grid-template-columns: repeat(2, 1fr);
+            }
+            @include xl {
+                grid-template-areas: "f-aside f-article" "f-aside f-bar";
+            }
+
+            aside {
+                @include sm {
+                    display: grid;
+                    grid-template-areas: "num txt";
+                }
+                @include md {
+                    grid-template-areas: "txt num";
+                }
+                @include lg {
+                    display: flex;
+                    flex-direction: column;
+                    flex-direction: column-reverse;
+                    grid-area: f-aside;
+                    grid-gap: 25px;
+                }
+                @include xl {
+                    margin-right: 40px;
+                }
+
+                h3 {
+                    color: $drkblu;
+                    font-size: rem-calc(60);
+                    @include sm {
+                        grid-area: num;
+                    }
+                    @include md {
+                        font-size: rem-calc(100);
+                    }
+                    @include lg {
+                        font-size: rem-calc(80);
+                    }
+                    @include xl {
+                        text-align: right;
+                    }
+                }
+
+                h4 {
+                    color: $white;
+                    font-size: rem-calc(19);
+                    @include sm {
+                        font-size: rem-calc(22);
+                        grid-area: txt;
+                        margin: 7px 0 0 15px;
+                    }
+                    @include md {
+                        font-size: rem-calc(26);
+                        margin: 15px 20px 0 0;
+                        text-align: right;
+                    }
+                    @include lg {
+                        font-size: rem-calc(45);
+                        margin-top: -5px;
+                    }
+                    @include xl {
+                        font-size: rem-calc(80);
+                    }
+                }
+
+                article {
+                    @include lg {
+                        grid-area: f-article;
+                    }
+                }
+            }
+
+            #white-bg {
+                background-color: $white;
+                display: grid;
+                grid-template-columns: 62% auto;
+                height: 9px;
+                margin: 10px 0 20px;
+                @include lg {
+                    grid-area: f-bar;
+                    margin-top: 20px;
+                }
+                @include xl {
+                    height: 12px;
+                    margin-top: 40px;
+                }
+
+                > div {
+                    background-color: $drkblu;
+                }
+            }
         }
-      }
     }
-  }
-  @include xl {
-    > div {
-      > div {
-        grid-template-areas: "f-aside f-article" "f-aside f-bar";
-
-        aside {
-          margin-right: 40px;
-
-          h3 {
-            text-align: right;
-          }
-
-          h4 {
-            font-size: rem-calc(80);
-          }
-        }
-
-        > div {
-          grid-area: f-bar;
-          margin-top: 20px;
-        }
-
-        #white-bg {
-          height: 12px;
-          margin-top: 40px;
-        }
-      }
-    }
-  }
 }

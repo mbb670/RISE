@@ -2,142 +2,132 @@
     hero
 ============= */
 #hero-1 {
-  background-image: url("../img/hero/hero-1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: rem-calc(455);
-  position: relative;
-  z-index: 4;
-
-  ul {
-    left: 60%;
-    // padding: 380px 10px 0 200px;
-    position: absolute;
-    top: 85%;
-
-    li {
-      display: block;
-      padding-bottom: 20px;
-      text-align: right;
-      width: 90px;
-
-      h4 {
-        color: $white;
-        font-family: "ivystyle-sans", sans-serif;
-        font-style: italic;
-        font-weight: bold;
-        padding-bottom: 2px;
-      }
-
-      &::after {
-        background-color: $white;
-        content: '';
-        display: block;
-        height: 6px;
-        width: 90px;
-      }
+    background-image: url("../img/hero/hero-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: rem-calc(455);
+    position: relative;
+    z-index: 4;
+    @include sm {
+        height: rem-calc(700);
     }
-
-    li:nth-last-child(2) {
-      padding-bottom: 10px;
+    @include md {
+        background-position: center;
+        background-size: contain;
+        height: rem-calc(595);
+        padding-top: 20px;
     }
-
-    li:nth-last-child(1) {
-      i {
-        color: $white;
-        font-size: rem-calc(25);
-        padding-left: 65px;
-      }
-
-      &::after {
-        content: none;
-      }
+    @include lg {
+        height: rem-calc(626);
     }
-  }
-  @include sm {
-    height: rem-calc(700);
+    @include xl {
+        height: rem-calc(851);
+        margin-top: 40px;
+    }
 
     ul {
-      left: 75%;
-      top: 80%;
-    }
-  }
-  @include md {
-    background-position: center;
-    background-size: contain;
-    height: rem-calc(595);
-    padding-top: 20px;
-
-    ul {
-      li {
-        font-size: rem-calc(28);
-        width: 133px;
-
-        &::after {
-          width: 133px;
+        left: 60%;
+        // padding: 380px 10px 0 200px;
+        position: absolute;
+        top: 85%;
+        @include sm {
+            left: 75%;
+            top: 80%;
         }
-      }
-    }
-  }
-  @include lg {
-    height: rem-calc(626);
-
-    ul {}
-  }
-  @include xl {
-    height: rem-calc(851);
-    margin-top: 40px;
-
-    ul {
-      left: 70%;
-      top: 60%;
-
-      li {
-        font-size: rem-calc(42);
-        width: 188px;
-
-        &::after {
-          height: 9px;
-          width: 188px;
+        @include xl {
+            left: 70%;
+            top: 60%;
         }
-      }
+
+        li {
+            display: block;
+            padding-bottom: 20px;
+            text-align: right;
+            width: 90px;
+            @include md {
+                font-size: rem-calc(28);
+                width: 133px;
+            }
+            @include xl {
+                font-size: rem-calc(42);
+                width: 188px;
+            }
+
+            h4 {
+                color: $white;
+                font-family: "ivystyle-sans", sans-serif;
+                font-style: italic;
+                font-weight: bold;
+                padding-bottom: 2px;
+            }
+
+            &::after {
+                background-color: $white;
+                content: '';
+                display: block;
+                height: 6px;
+                width: 90px;
+                @include md {
+                    width: 133px;
+                }
+                @include xl {
+                    height: 9px;
+                    width: 188px;
+                }
+            }
+        }
+
+        li:nth-last-child(2) {
+            padding-bottom: 10px;
+        }
+
+        li:nth-last-child(1) {
+            i {
+                color: $white;
+                font-size: rem-calc(25);
+                padding-left: 65px;
+            }
+
+            &::after {
+                content: none;
+            }
+        }
     }
-  }
 }
 
 #hero-2 {
-  background-image: url("../img/hero/hero-2.jpg");
-  background-position: 65%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: rem-calc(773);
-  @include sm {
-    height: rem-calc(830);
-  }
-  @include md {
-    background-size: contain;
-    height: rem-calc(600);
-  }
-  @include xl {
-    background-position: center;
-    height: rem-calc(900);
-    margin-top: 40px;
-  }
+    background-image: url("../img/hero/hero-2.jpg");
+    background-position: 65%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: rem-calc(773);
+    @include sm {
+        height: rem-calc(830);
+    }
+    @include md {
+        background-size: contain;
+        height: rem-calc(600);
+    }
+    @include xl {
+        background-position: center;
+        height: rem-calc(900);
+        margin-top: 40px;
+    }
 }
 
 #hero-3 {
-  background-image: url("../img/hero/hero-3.jpg");
-  background-position: 65%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: rem-calc(695);
-  @include md {
-    background-size: contain;
-    height: rem-calc(611);
-    @include xl {
-      background-position: center;
-      height: rem-calc(900);
-      margin-top: 40px;
+    background-image: url("../img/hero/hero-3.jpg");
+    background-position: 65%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: rem-calc(695);
+    @include md {
+        background-size: contain;
+        height: rem-calc(611);
     }
-  }
+    @include xl {
+        background-position: center;
+        height: rem-calc(900);
+        margin-top: 40px;
+    }
 }

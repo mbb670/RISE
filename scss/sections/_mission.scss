@@ -2,27 +2,36 @@
     Mission
 ============= */
 #mission {
-  padding-top: 100px;
-
-  > aside {
-    background-image: url("../img/icons/mission_icon.svg");
-  }
-  @include md {
-    div {
-      div {
-        display: flex;
-
-        h1 {
-          text-align: right;
-        }
-
-        p {
-          margin-left: 20px;
-        }
-      }
+    padding-top: 100px;
+    @include xl {
+        padding-top: 120px;
     }
-  }
-  @include xl {
-    padding-top: 120px;
-  }
+
+    > aside {
+        background-image: url("../img/icons/mission_icon.svg");
+    }
+
+    > div {
+        > div {
+            @include md {
+                display: flex;
+            }
+
+            aside {
+                h1 {
+                    @include md {
+                        text-align: right;
+                    }
+                }
+            }
+
+            article {
+                p {
+                    @include md {
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+    }
 }
