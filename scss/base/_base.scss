@@ -47,35 +47,74 @@ main {
         grid-area: content;
     }
 
-    > aside {
-        background-repeat: no-repeat;
-        background-size: 90%;
-        transform: scale(.75);
-        grid-area: side;
-        height: rem-calc(210);
-        // height: 100vw;
-        position: -webkit-sticky;
-        position: sticky;
-        top: 18%;
-        z-index: 5;
+    // > aside {
+    //     background-repeat: no-repeat;
+    //     background-size: 90%;
+    //     transform: scale(.75);
+    //     grid-area: side;
+    //     height: rem-calc(210);
+    //     // height: 100vw;
+    //     position: -webkit-sticky;
+    //     position: sticky;
+    //     top: 18%;
+    //     z-index: 5;
+    //     @include sm {
+    //         left: 32px;
+    //         top: 18%;
+    //     }
+    //     @include md {
+    //         left: 35px;
+    //         top: 25%;
+    //     }
+    //     @include lg {
+    //         left: 45px;
+    //         top: 270px;
+    //     }
+    //     @include xl {
+    //         left: 70px;
+    //         top: 42%;
+    //     }
+    // }
+
+    >aside{
+    background-position: rem-calc(5);
+    background-repeat: no-repeat;
+    background-size: rem-calc(50);
+    grid-area: side;
+    height: rem-calc(50);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 170px;
+    z-index: 5;
         @include sm {
-            left: 32px;
-            top: 18%;
+            height: rem-calc(60);
+            background-size: rem-calc(60);
+            left: 6.5%;
+            top: 23.5%;
         }
         @include md {
-            left: 35px;
-            top: 25%;
+            height: rem-calc(75);
+            background-size: rem-calc(75);
+            left: 5%;
+            top: 31%;
         }
         @include lg {
-            left: 45px;
-            top: 270px;
+            height: rem-calc(100);
+            background-size: rem-calc(100);
+            left: 5.5%;
+            top: 39.5%;
         }
         @include xl {
-            left: 70px;
-            top: 42%;
+            height: rem-calc(120);
+            background-size: rem-calc(120);
+            left: 7%;
+            top: 420px;
         }
-    }
 }
+}
+
+
+
 
     p {
         color: $drkblu;

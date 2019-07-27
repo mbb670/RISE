@@ -348,31 +348,39 @@ main {
   .content-grid > div {
     grid-area: content; }
   .content-grid > aside {
+    background-position: 0.3125rem;
     background-repeat: no-repeat;
-    background-size: 90%;
-    transform: scale(0.75);
+    background-size: 3.125rem;
     grid-area: side;
-    height: 13.125rem;
+    height: 3.125rem;
     position: -webkit-sticky;
     position: sticky;
-    top: 18%;
+    top: 170px;
     z-index: 5; }
     @media (min-width: 500px) {
       .content-grid > aside {
-        left: 32px;
-        top: 18%; } }
+        height: 3.75rem;
+        background-size: 3.75rem;
+        left: 6.5%;
+        top: 23.5%; } }
     @media (min-width: 675px) {
       .content-grid > aside {
-        left: 35px;
-        top: 25%; } }
+        height: 4.6875rem;
+        background-size: 4.6875rem;
+        left: 5%;
+        top: 31%; } }
     @media (min-width: 890px) {
       .content-grid > aside {
-        left: 45px;
-        top: 270px; } }
+        height: 6.25rem;
+        background-size: 6.25rem;
+        left: 5.5%;
+        top: 39.5%; } }
     @media (min-width: 1080px) {
       .content-grid > aside {
-        left: 70px;
-        top: 42%; } }
+        height: 7.5rem;
+        background-size: 7.5rem;
+        left: 7%;
+        top: 420px; } }
 
 p {
   color: #191D4A;
@@ -466,9 +474,12 @@ header {
     @media (min-width: 1080px) {
       header section {
         left: 50%;
-        transform: translateX(-520px); } }
+        transform: translateX(-480px); } }
     header section img {
       height: 6rem; }
+      @media (min-width: 500px) {
+        header section img {
+          height: 6.875rem; } }
       @media (min-width: 675px) {
         header section img {
           height: 9.6875rem; } }
@@ -481,8 +492,12 @@ header {
     header section nav i {
       color: #191D4A;
       font-size: 2.1875rem;
-      margin-left: 14px;
+      margin-left: 12px;
       margin-top: 6px; }
+      @media (min-width: 500px) {
+        header section nav i {
+          font-size: 2.5rem;
+          margin-left: 15px; } }
       @media (min-width: 675px) {
         header section nav i {
           font-size: 3.125rem;
