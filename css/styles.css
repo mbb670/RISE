@@ -348,15 +348,14 @@ main {
   .content-grid > div {
     grid-area: content; }
   .content-grid > aside {
-    background-position: 0.3125rem;
     background-repeat: no-repeat;
-    background-size: 50%;
+    background-size: 90%;
+    transform: scale(0.75);
     grid-area: side;
-    height: 50%;
-    left: 20px;
+    height: 13.125rem;
     position: -webkit-sticky;
     position: sticky;
-    top: 14%;
+    top: 18%;
     z-index: 5; }
     @media (min-width: 500px) {
       .content-grid > aside {
