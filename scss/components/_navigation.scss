@@ -2,9 +2,10 @@
     Navigation
 ============= */
 header {
+
     div {
         nav {
-            background: rgba(29,25,74,0.75);
+            background: $tdrkblu;
             display: block;
             left: 0;
             overflow: hidden;
@@ -12,8 +13,8 @@ header {
             width: 100%;
             z-index: 10;
             @include lg {
-                background-color: transparent;
                 position: absolute;
+                background-color:$tbase;
             }
 
             ul {

@@ -23,6 +23,9 @@ header {
     }
 
     section:nth-child(1) {
+        @include lg{
+        background-color: $tbase;
+        }
         img {
             height: rem-calc(96);
             @include sm {
@@ -49,6 +52,9 @@ header {
             background-color: transparent;
             border: none;
             outline: none;
+            @include lg{
+            background-color: $tbase;
+            }
 
             i {
                 color: $drkblu;

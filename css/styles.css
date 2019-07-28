@@ -466,8 +466,8 @@ header div nav {
   z-index: 10; }
   @media (min-width: 890px) {
     header div nav {
-      background-color: transparent;
-      position: absolute; } }
+      position: absolute;
+      background-color: rgba(0, 212, 255, 0.75); } }
   header div nav ul {
     margin-bottom: 20px;
     padding: 25px; }
@@ -562,6 +562,10 @@ header div {
       padding-top: 65px;
       transform: translateX(-480px); } }
 
+@media (min-width: 890px) {
+  header section:nth-child(1) {
+    background-color: rgba(0, 212, 255, 0.75); } }
+
 header section:nth-child(1) img {
   height: 6rem; }
   @media (min-width: 500px) {
@@ -585,6 +589,9 @@ header section:nth-child(2) button {
   background-color: transparent;
   border: none;
   outline: none; }
+  @media (min-width: 890px) {
+    header section:nth-child(2) button {
+      background-color: rgba(0, 212, 255, 0.75); } }
   header section:nth-child(2) button i {
     color: #191D4A;
     font-size: 2.1875rem;
