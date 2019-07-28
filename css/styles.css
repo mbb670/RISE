@@ -502,21 +502,39 @@ header div nav {
           header div nav ul li a:link,
           header div nav ul li a:visited {
             font-size: 2.125rem; } }
-      header div nav ul li::after {
-        background-color: #fff;
-        content: '';
-        display: block;
-        height: 10px;
-        width: 260px; }
+        header div nav ul li a:link::after,
+        header div nav ul li a:visited::after {
+          background-color: #fff;
+          content: '';
+          display: block;
+          height: 10px;
+          transition: 0.25s;
+          width: 260px; }
+          @media (min-width: 890px) {
+            header div nav ul li a:link::after,
+            header div nav ul li a:visited::after {
+              background-color: #191D4A;
+              height: 6px;
+              width: 113px; } }
+          @media (min-width: 1080px) {
+            header div nav ul li a:link::after,
+            header div nav ul li a:visited::after {
+              height: 9px;
+              width: 147px; } }
+      header div nav ul li a:active,
+      header div nav ul li a:hover {
+        color: #00D4FF; }
         @media (min-width: 890px) {
-          header div nav ul li::after {
-            background-color: #191D4A;
-            height: 6px;
-            width: 113px; } }
-        @media (min-width: 1080px) {
-          header div nav ul li::after {
-            height: 9px;
-            width: 147px; } }
+          header div nav ul li a:active,
+          header div nav ul li a:hover {
+            color: #fff; } }
+        header div nav ul li a:active::after,
+        header div nav ul li a:hover::after {
+          background-color: #00D4FF; }
+          @media (min-width: 890px) {
+            header div nav ul li a:active::after,
+            header div nav ul li a:hover::after {
+              background-color: #fff; } }
     header div nav ul li:nth-child(1) {
       margin-top: 0; }
       @media (min-width: 890px) {

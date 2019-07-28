@@ -50,22 +50,38 @@ header {
                         @include xl {
                             font-size: rem-calc(34);
                         }
+
+                        &::after {
+                            background-color: $white;
+                            content: '';
+                            display: block;
+                            height: 10px;
+                            transition: 0.25s;
+                            width: 260px;
+                            @include lg {
+                                background-color: $drkblu;
+                                height: 6px;
+                                width: 113px;
+                            }
+                            @include xl {
+                                height: 9px;
+                                width: 147px;
+                            }
+                        }
                     }
 
-                    &::after {
-                        background-color: $white;
-                        content: '';
-                        display: block;
-                        height: 10px;
-                        width: 260px;
+                    a:active,
+                    a:hover {
+                        color: $base;
                         @include lg {
-                            background-color: $drkblu;
-                            height: 6px;
-                            width: 113px;
+                            color: $white;
                         }
-                        @include xl {
-                            height: 9px;
-                            width: 147px;
+
+                        &::after {
+                            background-color: $base;
+                            @include lg {
+                                background-color: $white;
+                            }
                         }
                     }
                 }
