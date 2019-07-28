@@ -37,7 +37,6 @@ main {
     grid-template-areas: ". side content .";
     grid-template-columns: 1fr 6fr 20fr 1fr;
     padding-top: 60px;
-
     @include xl {
         grid-template-columns: auto 231.2px 770.7px auto;
         padding-top: 80px;
@@ -47,16 +46,16 @@ main {
         grid-area: content;
     }
 
-    >aside{
-    background-position: rem-calc(5);
-    background-repeat: no-repeat;
-    background-size: rem-calc(50);
-    grid-area: side;
-    height: rem-calc(50);
-    position: -webkit-sticky;
-    position: sticky;
-    top: 170px;
-    z-index: 5;
+    > aside {
+        background-position: rem-calc(5);
+        background-repeat: no-repeat;
+        background-size: rem-calc(50);
+        grid-area: side;
+        height: rem-calc(50);
+        position: -webkit-sticky;
+        position: sticky;
+        top: 170px;
+        z-index: 5;
         @include sm {
             height: rem-calc(60);
             background-size: rem-calc(60);
@@ -66,74 +65,71 @@ main {
         @include md {
             height: rem-calc(75);
             background-size: rem-calc(75);
-            left: 5%;
+            left: 6%;
             top: 31%;
         }
         @include lg {
             height: rem-calc(100);
             background-size: rem-calc(100);
-            left: 5.5%;
-            top: 42%;
+            left: 5%;
+            top: 49%;
         }
         @include xl {
             height: rem-calc(120);
             background-size: rem-calc(120);
             left: 50%;
             transform: translateX(-480px);
-            top: 610px;
-        }
-}
-}
-
-
-
-
-    p {
-        color: $drkblu;
-        font-family: 'helvetica';
-        font-size: rem-calc(16);
-        font-weight: bold;
-        line-height: rem-calc(19);
-        @include md {
-            font-size: rem-calc(22);
-            line-height: rem-calc(26);
-        }
-        @include xl {
-            font-size: rem-calc(30);
-            line-height: rem-calc(38);
+            top: 590px;
         }
     }
+}
 
-    h1 {
-        color: $white;
-        display: none;
-        font-size: rem-calc(45);
-        font-weight: bold;
-        @include md {
-            display: block;
-        }
-        @include xl {
-            font-size: rem-calc(80);
-        }
+p {
+    color: $drkblu;
+    font-family: 'helvetica';
+    font-size: rem-calc(16);
+    font-weight: bold;
+    line-height: rem-calc(19);
+    @include md {
+        font-size: rem-calc(22);
+        line-height: rem-calc(26);
     }
-
-    h2 {
-        color: $drkblu;
-        font-family: "ivystyle-sans", sans-serif;
+    @include xl {
         font-size: rem-calc(30);
-        font-style: italic;
-        padding-bottom: 15px;
-        @include md {
-            font-size: rem-calc(60);
-        }
-        @include lg {
-            font-size: rem-calc(75);
-        }
-        @include xl {
-            font-size: rem-calc(90);
-        }
+        line-height: rem-calc(38);
     }
+}
 
-    span {
-        color: $white;
+h1 {
+    color: $white;
+    display: none;
+    font-size: rem-calc(45);
+    font-weight: bold;
+    @include md {
+        display: block;
     }
+    @include xl {
+        font-size: rem-calc(80);
+    }
+}
+
+h2 {
+    color: $drkblu;
+    font-family: "ivystyle-sans", sans-serif;
+    font-size: rem-calc(30);
+    font-style: italic;
+    padding-bottom: 15px;
+    @include md {
+        font-size: rem-calc(60);
+    }
+    @include lg {
+        font-size: rem-calc(75);
+    }
+    @include xl {
+        font-size: rem-calc(90);
+    }
+}
+
+span {
+    color: $white;
+}

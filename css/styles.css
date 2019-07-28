@@ -367,21 +367,21 @@ main {
       .content-grid > aside {
         height: 4.6875rem;
         background-size: 4.6875rem;
-        left: 5%;
+        left: 6%;
         top: 31%; } }
     @media (min-width: 890px) {
       .content-grid > aside {
         height: 6.25rem;
         background-size: 6.25rem;
-        left: 5.5%;
-        top: 42%; } }
+        left: 5%;
+        top: 49%; } }
     @media (min-width: 1080px) {
       .content-grid > aside {
         height: 7.5rem;
         background-size: 7.5rem;
         left: 50%;
         transform: translateX(-480px);
-        top: 610px; } }
+        top: 590px; } }
 
 p {
   color: #191D4A;
@@ -491,7 +491,7 @@ header div nav {
       @media (min-width: 1080px) {
         header div nav ul li a:link,
         header div nav ul li a:visited {
-          font-size: 2.1875rem; } }
+          font-size: 2.125rem; } }
     header div nav ul li::after {
       background-color: #191D4A;
       content: '';
@@ -509,72 +509,75 @@ header div nav {
 /* =============
     Header
 ============= */
-header {
-  padding-top: 0 !important; }
-  header div {
-    left: 4%;
-    padding-top: 6%;
-    position: fixed;
-    z-index: 5;
-    top: 0; }
-    @media (min-width: 500px) {
-      header div {
-        left: 7%; } }
-    @media (min-width: 675px) {
-      header div {
-        left: 5%; } }
-    @media (min-width: 1080px) {
-      header div {
-        left: 50%;
-        transform: translateX(-480px); } }
-  header section:nth-child(1) img {
-    height: 6rem; }
-    @media (min-width: 500px) {
-      header section:nth-child(1) img {
-        height: 6.875rem; } }
-    @media (min-width: 675px) {
-      header section:nth-child(1) img {
-        height: 9.6875rem; } }
-    @media (min-width: 890px) {
-      header section:nth-child(1) img {
-        height: 12.5rem; } }
-    @media (min-width: 1080px) {
-      header section:nth-child(1) img {
-        height: 16.25rem; } }
+header div {
+  left: 4%;
+  padding-top: 6%;
+  position: fixed;
+  z-index: 5;
+  top: 0; }
+  @media (min-width: 500px) {
+    header div {
+      left: 7%; } }
+  @media (min-width: 675px) {
+    header div {
+      left: 5%; } }
+  @media (min-width: 1080px) {
+    header div {
+      left: 50%;
+      transform: translateX(-480px);
+      padding-top: 65px; } }
+
+header section:nth-child(1) img {
+  height: 6rem; }
+  @media (min-width: 500px) {
+    header section:nth-child(1) img {
+      height: 6.875rem; } }
+  @media (min-width: 675px) {
+    header section:nth-child(1) img {
+      height: 9.6875rem; } }
   @media (min-width: 890px) {
-    header section:nth-child(2) {
-      display: none; } }
-  header section:nth-child(2) button {
-    border: none;
-    outline: none;
-    background-color: transparent; }
-    header section:nth-child(2) button i {
-      color: #191D4A;
-      font-size: 2.1875rem;
-      margin-left: 10px;
-      margin-top: 6px; }
-      @media (min-width: 500px) {
-        header section:nth-child(2) button i {
-          font-size: 2.5rem;
-          margin-left: 15px; } }
-      @media (min-width: 675px) {
-        header section:nth-child(2) button i {
-          font-size: 3.125rem;
-          margin-left: 22px; } }
-      @media (min-width: 890px) {
-        header section:nth-child(2) button i {
-          font-size: 4.0625rem;
-          margin-left: 30px; } }
-      @media (min-width: 1080px) {
-        header section:nth-child(2) button i {
-          font-size: 4.6875rem;
-          margin-left: 50px; } }
-  header nav {
-    display: none;
-    grid-area: nav; }
+    header section:nth-child(1) img {
+      height: 12.5rem; } }
+  @media (min-width: 1080px) {
+    header section:nth-child(1) img {
+      height: 16.25rem; } }
+
+@media (min-width: 890px) {
+  header section:nth-child(2) {
+    display: none; } }
+
+header section:nth-child(2) button {
+  border: none;
+  outline: none;
+  background-color: transparent; }
+  header section:nth-child(2) button i {
+    color: #191D4A;
+    font-size: 2.1875rem;
+    margin-left: 6px;
+    margin-top: 6px; }
+    @media (min-width: 500px) {
+      header section:nth-child(2) button i {
+        font-size: 2.5rem;
+        margin-left: 9px; } }
+    @media (min-width: 675px) {
+      header section:nth-child(2) button i {
+        font-size: 3.125rem;
+        margin-left: 22px; } }
     @media (min-width: 890px) {
-      header nav {
-        display: block !important; } }
+      header section:nth-child(2) button i {
+        font-size: 4.0625rem;
+        margin-left: 30px; } }
+    @media (min-width: 1080px) {
+      header section:nth-child(2) button i {
+        font-size: 4.6875rem;
+        margin-left: 50px; } }
+
+header nav {
+  display: none;
+  grid-area: nav; }
+  @media (min-width: 890px) {
+    header nav {
+      display: block !important; } }
 
 /* =============
     Footer
@@ -605,7 +608,8 @@ footer > div {
 #hero-1 {
   background-image: url("../img/hero/hero-1.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
   height: 28.4375rem;
   position: relative;
   z-index: 4; }
@@ -614,8 +618,6 @@ footer > div {
       height: 43.75rem; } }
   @media (min-width: 675px) {
     #hero-1 {
-      background-position: center;
-      background-size: contain;
       height: 37.1875rem;
       padding-top: 20px; } }
   @media (min-width: 890px) {
@@ -680,13 +682,13 @@ footer > div {
 
 #hero-2 {
   background-image: url("../img/hero/hero-2.jpg");
-  background-position: 65%;
+  background-position: 60%;
   background-repeat: no-repeat;
   background-size: cover;
   height: 48.3125rem; }
   @media (min-width: 500px) {
     #hero-2 {
-      height: 51.875rem; } }
+      height: 68.75rem; } }
   @media (min-width: 675px) {
     #hero-2 {
       background-size: contain;
@@ -699,14 +701,18 @@ footer > div {
 
 #hero-3 {
   background-image: url("../img/hero/hero-3.jpg");
-  background-position: 65%;
+  background-position: 43%;
   background-repeat: no-repeat;
   background-size: cover;
   height: 43.4375rem; }
+  @media (min-width: 500px) {
+    #hero-3 {
+      height: 59.375rem; } }
   @media (min-width: 675px) {
     #hero-3 {
       background-size: contain;
-      height: 38.1875rem; } }
+      height: 38.1875rem;
+      background-position: 70%; } }
   @media (min-width: 1080px) {
     #hero-3 {
       background-position: center;

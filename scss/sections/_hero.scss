@@ -4,7 +4,8 @@
 #hero-1 {
     background-image: url("../img/hero/hero-1.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-position: center;
     height: rem-calc(455);
     position: relative;
     z-index: 4;
@@ -12,8 +13,6 @@
         height: rem-calc(700);
     }
     @include md {
-        background-position: center;
-        background-size: contain;
         height: rem-calc(595);
         padding-top: 20px;
     }
@@ -97,12 +96,12 @@
 
 #hero-2 {
     background-image: url("../img/hero/hero-2.jpg");
-    background-position: 65%;
+    background-position: 60%;
     background-repeat: no-repeat;
     background-size: cover;
     height: rem-calc(773);
     @include sm {
-        height: rem-calc(830);
+        height: rem-calc(1100);
     }
     @include md {
         background-size: contain;
@@ -117,13 +116,17 @@
 
 #hero-3 {
     background-image: url("../img/hero/hero-3.jpg");
-    background-position: 65%;
+    background-position: 43%;
     background-repeat: no-repeat;
     background-size: cover;
     height: rem-calc(695);
+    @include sm {
+        height: rem-calc(950);
+    }
     @include md {
         background-size: contain;
         height: rem-calc(611);
+        background-position: 70%;
     }
     @include xl {
         background-position: center;
