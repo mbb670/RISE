@@ -2,13 +2,12 @@
     Header
 ============= */
 header {
-    // padding-top: 0 !important;
     div {
         left: 4%;
         padding-top: 6%;
         position: fixed;
+        top: 0;
         z-index: 5;
-        top:0;
         @include sm {
             left: 7%;
         }
@@ -17,14 +16,13 @@ header {
         }
         @include xl {
             left: 50%;
-            transform: translateX(-480px);
             // padding-top: 6%;
-            padding-top:65px;
+            padding-top: 65px;
+            transform: translateX(-480px);
         }
     }
 
     section:nth-child(1) {
-
         img {
             height: rem-calc(96);
             @include sm {
@@ -48,9 +46,9 @@ header {
         }
 
         button {
+            background-color: transparent;
             border: none;
             outline: none;
-            background-color: transparent;
 
             i {
                 color: $drkblu;

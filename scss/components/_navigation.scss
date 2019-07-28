@@ -4,60 +4,76 @@
 header {
     div {
         nav {
-            -webkit-backdrop-filter: blur(5px);
-            backdrop-filter: blur(5px);
-            // background: rgba(34,34,34,0.65);
-            background-color: $black;
+            background: rgba(29,25,74,0.75);
             display: block;
-            width: 140px;
-            height:170px;
-            position: absolute;
-            // left:65px;
-            // top:150px;
+            left: 0;
+            overflow: hidden;
+            position: fixed;
+            width: 100%;
+            z-index: 10;
             @include lg {
                 background-color: transparent;
+                position: absolute;
             }
 
             ul {
+                margin-bottom: 20px;
+                padding: 25px;
                 @include lg {
                     display: flex;
                     flex-direction: column;
                     height: 100%;
+                    margin-bottom: 0;
+                    padding: 0;
                 }
 
                 li {
-                    margin-top: 15px;
-
-                    @include xl{
-                    margin-top: 25px;
+                    margin-top: 45px;
+                    @include lg {
+                        margin-top: 15px;
                     }
+                    @include xl {
+                        margin-top: 25px;
+                    }
+
                     a:link,
                     a:visited {
                         color: $white;
                         font-family: "ivystyle-sans", sans-serif;
+                        font-size: rem-calc(65);
                         font-style: italic;
                         font-weight: bold;
-                        font-size: rem-calc(25);
                         @include lg {
                             color: $drkblu;
+                            font-size: rem-calc(25);
                         }
-                        @include xl{
+                        @include xl {
                             font-size: rem-calc(34);
                         }
                     }
+
                     &::after {
-                        background-color: $drkblu;
+                        background-color: $white;
                         content: '';
                         display: block;
-                        height: 6px;
-                        width: 90px;
-                        @include md {
+                        height: 10px;
+                        width: 260px;
+                        @include lg {
+                            background-color: $drkblu;
+                            height: 6px;
                             width: 113px;
                         }
                         @include xl {
                             height: 9px;
                             width: 147px;
                         }
+                    }
+                }
+
+                li:nth-child(1) {
+                    margin-top: 0;
+                    @include lg {
+                        margin-top: 15px;
                     }
                 }
             }

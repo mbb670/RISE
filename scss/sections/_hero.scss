@@ -3,9 +3,9 @@
 ============= */
 #hero-1 {
     background-image: url("../img/hero/hero-1.jpg");
+    background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center;
     height: rem-calc(455);
     position: relative;
     z-index: 4;
@@ -124,9 +124,9 @@
         height: rem-calc(950);
     }
     @include md {
+        background-position: 70%;
         background-size: contain;
         height: rem-calc(611);
-        background-position: 70%;
     }
     @include xl {
         background-position: center;

@@ -55,31 +55,31 @@ main {
         position: -webkit-sticky;
         position: sticky;
         top: 170px;
-        z-index: 5;
+        z-index: 4;
         @include sm {
-            height: rem-calc(60);
             background-size: rem-calc(60);
+            height: rem-calc(60);
             left: 6.5%;
             top: 23.5%;
         }
         @include md {
-            height: rem-calc(75);
             background-size: rem-calc(75);
+            height: rem-calc(75);
             left: 6%;
             top: 31%;
         }
         @include lg {
-            height: rem-calc(100);
             background-size: rem-calc(100);
+            height: rem-calc(100);
             left: 5%;
             top: 49%;
         }
         @include xl {
-            height: rem-calc(120);
             background-size: rem-calc(120);
+            height: rem-calc(120);
             left: 50%;
-            transform: translateX(-480px);
             top: 590px;
+            transform: translateX(-480px);
         }
     }
 }
