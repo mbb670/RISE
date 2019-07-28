@@ -6,10 +6,17 @@
     @include xl {
         padding-top: 120px;
     }
+    // &::after{
+    //     content:url("../img/hero/hero-2.jpg");
+    //     background-repeat: no-repeat;
+    //     background-size: cover;
+    //     width:100vw;
+    //     height:70px;
+    //     position: absolute;
+    //     left:-240px;
+    //     transform: scale(.18);
 
-    > aside {
-        background-image: url("../img/icons/mission_icon.svg");
-    }
+    // }
 
     > div {
         > div {

@@ -96,11 +96,15 @@
 }
 
 #hero-2 {
+    // display: block;
+    // width: 100vh;
+
     background-image: url("../img/hero/hero-2.jpg");
     background-position: 65%;
     background-repeat: no-repeat;
     background-size: cover;
     height: rem-calc(773);
+
     @include sm {
         height: rem-calc(830);
     }

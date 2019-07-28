@@ -336,51 +336,43 @@ a:visited {
 main {
   background-color: #00D4FF; }
 
-.content-grid {
+#container {
   display: grid;
   grid-template-areas: ". side content .";
-  grid-template-columns: 1fr 6fr 20fr 1fr;
-  padding-top: 60px; }
-  @media (min-width: 1080px) {
-    .content-grid {
-      grid-template-columns: auto 231.2px 770.7px auto;
-      padding-top: 80px; } }
-  .content-grid > div {
+  grid-template-columns: 1fr 6fr 20fr 1fr; }
+  #container header {
+    grid-area: side; }
+    #container header > aside ul {
+      display: grid;
+      grid-template-rows: 550px 1030px 1015px 350px 640px 650px;
+      grid-template-columns: 1fr;
+      grid-template-areas: "header" "mission" "about" "funds" "gallery" "meet"; }
+      #container header > aside ul li {
+        background-position: 0.3125rem;
+        background-repeat: no-repeat;
+        background-size: 3.125rem;
+        height: 3.125rem;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 170px;
+        z-index: 5; }
+      #container header > aside ul li:nth-child(1) {
+        background-image: url(../img/icons/mission_icon.svg);
+        grid-area: mission; }
+      #container header > aside ul li:nth-child(2) {
+        background-image: url(../img/icons/about_icon.svg);
+        grid-area: about; }
+      #container header > aside ul li:nth-child(3) {
+        background-image: url(../img/icons/fundraising_icon.svg);
+        grid-area: funds; }
+      #container header > aside ul li:nth-child(4) {
+        background-image: url(../img/icons/gallery_icon.svg);
+        grid-area: gallery; }
+      #container header > aside ul li:nth-child(4) {
+        background-image: url(../img/icons/meet_icon.svg);
+        grid-area: meet; }
+  #container #content {
     grid-area: content; }
-  .content-grid > aside {
-    background-position: 0.3125rem;
-    background-repeat: no-repeat;
-    background-size: 3.125rem;
-    grid-area: side;
-    height: 3.125rem;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 170px;
-    z-index: 5; }
-    @media (min-width: 500px) {
-      .content-grid > aside {
-        height: 3.75rem;
-        background-size: 3.75rem;
-        left: 6.5%;
-        top: 23.5%; } }
-    @media (min-width: 675px) {
-      .content-grid > aside {
-        height: 4.6875rem;
-        background-size: 4.6875rem;
-        left: 5%;
-        top: 31%; } }
-    @media (min-width: 890px) {
-      .content-grid > aside {
-        height: 6.25rem;
-        background-size: 6.25rem;
-        left: 5.5%;
-        top: 39.5%; } }
-    @media (min-width: 1080px) {
-      .content-grid > aside {
-        height: 7.5rem;
-        background-size: 7.5rem;
-        left: 7%;
-        top: 420px; } }
 
 p {
   color: #191D4A;
@@ -656,8 +648,6 @@ footer > div {
   @media (min-width: 1080px) {
     #mission {
       padding-top: 120px; } }
-  #mission > aside {
-    background-image: url("../img/icons/mission_icon.svg"); }
   @media (min-width: 675px) {
     #mission > div > div {
       display: flex; } }
@@ -673,8 +663,6 @@ footer > div {
 ============= */
 #about {
   margin-bottom: 60px; }
-  #about > aside {
-    background-image: url("../img/icons/about_icon.svg"); }
   @media (min-width: 675px) {
     #about div div {
       display: flex; } }
@@ -689,9 +677,6 @@ footer > div {
 /* =============
     Fundraising
 ============= */
-#fundraising > aside {
-  background-image: url("../img/icons/fundraising_icon.svg"); }
-
 @media (min-width: 890px) {
   #fundraising > div > div {
     display: grid;
@@ -784,9 +769,6 @@ footer > div {
 /* =============
     Gallery
 ============= */
-#gallery > aside {
-  background-image: url("../img/icons/gallery_icon.svg"); }
-
 #gallery div ul {
   display: grid;
   grid-gap: 10px;
@@ -835,8 +817,6 @@ footer > div {
   @media (min-width: 1080px) {
     #meet {
       margin-bottom: 250px; } }
-  #meet > aside {
-    background-image: url("../img/icons/meet_icon.svg"); }
   #meet div ul {
     display: grid;
     grid-auto-rows: 125px;
