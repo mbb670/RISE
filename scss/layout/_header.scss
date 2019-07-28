@@ -3,12 +3,12 @@
 ============= */
 header {
     padding-top: 0 !important;
-
-    section {
+    div {
         left: 4%;
         padding-top: 6%;
         position: fixed;
         z-index: 5;
+        top:0;
         @include sm {
             left: 7%;
         }
@@ -19,10 +19,13 @@ header {
             left: 50%;
             transform: translateX(-480px);
         }
+    }
+
+    section:nth-child(1) {
 
         img {
             height: rem-calc(96);
-            @include sm{
+            @include sm {
                 height: rem-calc(110);
             }
             @include md {
@@ -35,14 +38,24 @@ header {
                 height: rem-calc(260);
             }
         }
+    }
 
-        nav {
+    section:nth-child(2) {
+        @include lg {
+            display: none;
+        }
+
+        button {
+            border: none;
+            outline: none;
+            background-color: transparent;
+
             i {
                 color: $drkblu;
                 font-size: rem-calc(35);
-                margin-left: 12px;
+                margin-left: 10px;
                 margin-top: 6px;
-                @include sm{
+                @include sm {
                     font-size: rem-calc(40);
                     margin-left: 15px;
                 }
@@ -59,6 +72,14 @@ header {
                     margin-left: 50px;
                 }
             }
+        }
+    }
+
+    nav {
+        display: none;
+        grid-area: nav;
+        @include lg {
+            display: block !important;
         }
     }
 }

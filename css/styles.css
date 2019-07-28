@@ -374,13 +374,14 @@ main {
         height: 6.25rem;
         background-size: 6.25rem;
         left: 5.5%;
-        top: 39.5%; } }
+        top: 42%; } }
     @media (min-width: 1080px) {
       .content-grid > aside {
         height: 7.5rem;
         background-size: 7.5rem;
-        left: 7%;
-        top: 420px; } }
+        left: 50%;
+        transform: translateX(-480px);
+        top: 610px; } }
 
 p {
   color: #191D4A;
@@ -455,61 +456,125 @@ textarea {
 /* =============
     Navigation
 ============= */
+header div nav {
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  background-color: #000;
+  display: block;
+  width: 140px;
+  height: 170px;
+  position: absolute; }
+  @media (min-width: 890px) {
+    header div nav {
+      background-color: transparent; } }
+  @media (min-width: 890px) {
+    header div nav ul {
+      display: flex;
+      flex-direction: column;
+      height: 100%; } }
+  header div nav ul li {
+    margin-top: 15px; }
+    @media (min-width: 1080px) {
+      header div nav ul li {
+        margin-top: 25px; } }
+    header div nav ul li a:link,
+    header div nav ul li a:visited {
+      color: #fff;
+      font-family: "ivystyle-sans", sans-serif;
+      font-style: italic;
+      font-weight: bold;
+      font-size: 1.5625rem; }
+      @media (min-width: 890px) {
+        header div nav ul li a:link,
+        header div nav ul li a:visited {
+          color: #191D4A; } }
+      @media (min-width: 1080px) {
+        header div nav ul li a:link,
+        header div nav ul li a:visited {
+          font-size: 2.1875rem; } }
+    header div nav ul li::after {
+      background-color: #191D4A;
+      content: '';
+      display: block;
+      height: 6px;
+      width: 90px; }
+      @media (min-width: 675px) {
+        header div nav ul li::after {
+          width: 113px; } }
+      @media (min-width: 1080px) {
+        header div nav ul li::after {
+          height: 9px;
+          width: 147px; } }
+
 /* =============
     Header
 ============= */
 header {
   padding-top: 0 !important; }
-  header section {
+  header div {
     left: 4%;
     padding-top: 6%;
     position: fixed;
-    z-index: 5; }
+    z-index: 5;
+    top: 0; }
     @media (min-width: 500px) {
-      header section {
+      header div {
         left: 7%; } }
     @media (min-width: 675px) {
-      header section {
+      header div {
         left: 5%; } }
     @media (min-width: 1080px) {
-      header section {
+      header div {
         left: 50%;
         transform: translateX(-480px); } }
-    header section img {
-      height: 6rem; }
-      @media (min-width: 500px) {
-        header section img {
-          height: 6.875rem; } }
-      @media (min-width: 675px) {
-        header section img {
-          height: 9.6875rem; } }
-      @media (min-width: 890px) {
-        header section img {
-          height: 12.5rem; } }
-      @media (min-width: 1080px) {
-        header section img {
-          height: 16.25rem; } }
-    header section nav i {
+  header section:nth-child(1) img {
+    height: 6rem; }
+    @media (min-width: 500px) {
+      header section:nth-child(1) img {
+        height: 6.875rem; } }
+    @media (min-width: 675px) {
+      header section:nth-child(1) img {
+        height: 9.6875rem; } }
+    @media (min-width: 890px) {
+      header section:nth-child(1) img {
+        height: 12.5rem; } }
+    @media (min-width: 1080px) {
+      header section:nth-child(1) img {
+        height: 16.25rem; } }
+  @media (min-width: 890px) {
+    header section:nth-child(2) {
+      display: none; } }
+  header section:nth-child(2) button {
+    border: none;
+    outline: none;
+    background-color: transparent; }
+    header section:nth-child(2) button i {
       color: #191D4A;
       font-size: 2.1875rem;
-      margin-left: 12px;
+      margin-left: 10px;
       margin-top: 6px; }
       @media (min-width: 500px) {
-        header section nav i {
+        header section:nth-child(2) button i {
           font-size: 2.5rem;
           margin-left: 15px; } }
       @media (min-width: 675px) {
-        header section nav i {
+        header section:nth-child(2) button i {
           font-size: 3.125rem;
           margin-left: 22px; } }
       @media (min-width: 890px) {
-        header section nav i {
+        header section:nth-child(2) button i {
           font-size: 4.0625rem;
           margin-left: 30px; } }
       @media (min-width: 1080px) {
-        header section nav i {
+        header section:nth-child(2) button i {
           font-size: 4.6875rem;
           margin-left: 50px; } }
+  header nav {
+    display: none;
+    grid-area: nav; }
+    @media (min-width: 890px) {
+      header nav {
+        display: block !important; } }
 
 /* =============
     Footer

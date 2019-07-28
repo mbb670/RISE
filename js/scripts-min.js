@@ -1,0 +1,1 @@
+$(document).ready(function(){var e=$("#burger-icon"),n=$("nav[data-nav]"),a=$("nav[data-nav] a"),t=!1;function o(){console.log("click"),!1===t?(n.show(),t=!0):(n.hide(),t=!1)}e.on("click",o),a.on("click",o);var c=$("#vert-type"),r=$("#test");TweenMax.set(c,{y:-460,x:180,rotation:-90,transformOrigin:"center center"}),TweenMax.set(r,{alpha:50}),TweenMax.to(r,500,{x:1e4})});
