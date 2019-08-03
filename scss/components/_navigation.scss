@@ -1,176 +1,135 @@
 /* =============
     Navigation
 ============= */
-header {
-
-    div {
-        nav {
-            background: $tdrkblu;
-            display: block;
-            left: 0;
-            overflow: hidden;
-            position: fixed;
-            width: 100%;
-            z-index: 10;
-            @include lg {
-                position: absolute;
-                background-color:$tbase;
-            }
-
-            ul {
-                margin-bottom: 20px;
-                padding: 25px;
-                @include lg {
-                    display: flex;
-                    flex-direction: column;
-                    height: 100%;
-                    margin-bottom: 0;
-                    padding: 0;
-                }
-
-                li {
-                    margin-top: 45px;
-                    @include lg {
-                        margin-top: 15px;
-                    }
-                    @include xl {
-                        margin-top: 25px;
-                    }
-
-                    a:link,
-                    a:visited {
-                        color: $white;
-                        font-family: "ivystyle-sans", sans-serif;
-                        font-size: rem-calc(65);
-                        font-style: italic;
-                        font-weight: bold;
-                        @include lg {
-                            color: $drkblu;
-                            font-size: rem-calc(25);
-                        }
-                        @include xl {
-                            font-size: rem-calc(34);
-                        }
-
-                        &::after {
-                            background-color: $white;
-                            content: '';
-                            display: block;
-                            height: 10px;
-                            transition: 0.25s;
-                            width: 260px;
-                            @include lg {
-                                background-color: $drkblu;
-                                height: 6px;
-                                width: 113px;
-                            }
-                            @include xl {
-                                height: 9px;
-                                width: 147px;
-                            }
-                        }
-                    }
-
-                    a:active,
-                    a:hover {
-                        color: $base;
-                        @include lg {
-                            color: $white;
-                        }
-
-                        &::after {
-                            background-color: $base;
-                            @include lg {
-                                background-color: $white;
-                            }
-                        }
-                    }
-                }
-
-                li:nth-child(1) {
-                    margin-top: 0;
-                    @include lg {
-                        margin-top: 15px;
-                    }
-                }
-            }
-        }
+#off-canvas-container {
+    background-color: $drkblu;
+    grid-template-areas: ". content .";
+    grid-template-columns: 10px auto 0;
+    height: 100vh;
+    left: 0;
+    padding-top: 20px;
+    position: fixed;
+    top: 0;
+    // width of the off canvas navigation
+    width: 200px;
+    z-index: 200;
+    @include lg {
+        width: 300px;
     }
-}
 
-
-
-
-
-
-a:hover,
-a:link {
-    text-decoration: none;
-    transition: o.25s;
-}
-
-
-#off-canvas-container{
-    /* -------------
+    > div {
+        grid-area: content;
+        /* -------------
         Here are the properties you can changes for the off-canvas navigation-slide
     ------------- */
-
-    // background-color: $black;
-    // grid-template-columns: 10px auto 10px;
-    // padding-top: 20px;
-
-    // width of the off canvas navigation
-    // width: 200px;
-
-
-    /* close btn */
-    button {
-        background-color: transparent;
-        border: none;
-        color: $white;
-        cursor: pointer;
-        font-size: rem-calc(25);
-        margin-bottom: 20px;
-        text-align: right;
-        transition: 0.25s;
-        width: 100%;
-    }
-
-    /* close btn */
-    button:hover {
-        color: red;
-    }
-
-    ul {
-        li {
+        /* close btn */
+        button {
+            background-color: transparent;
+            border: none;
+            color: $white;
+            cursor: pointer;
+            font-size: rem-calc(25);
             margin-bottom: 20px;
-            a:link,
-            a:visited {
-                color: #fff;
+            padding-right: 8px;
+            text-align: right;
+            transition: 0.25s;
+            width: 100%;
+            @include lg {
+                padding-right: 25px;
             }
+        }
+        /* close btn */
+        button:hover {
+            color: $base;
+        }
 
-            a:active,
-            a:hover {
-                color: blue;
+        #nav-container {
+            nav {
+                width: 100%;
+
+                ul {
+                    margin-right: 8px;
+
+                    li {
+                        display: flex;
+                        justify-content: flex-end;
+                        margin-top: 45px;
+                        @include lg {
+                            margin-top: 15px;
+                        }
+                        @include xl {
+                            margin-top: 25px;
+                        }
+
+                        a:link,
+                        a:visited {
+                            color: $white;
+                            font-family: "ivystyle-sans", sans-serif;
+                            font-size: rem-calc(45);
+                            font-style: italic;
+                            font-weight: bold;
+                            text-align: right;
+                            @include lg {
+                                font-size: rem-calc(55);
+                            }
+                            @include xl {
+                                font-size: rem-calc(65);
+                            }
+
+                            &::after {
+                                background-color: $white;
+                                content: '';
+                                display: block;
+                                height: 6px;
+                                transition: 0.25s;
+                                width: 100%;
+                                @include lg {
+                                    height: 6px;
+                                }
+                                @include xl {
+                                    height: 9px;
+                                }
+                            }
+                        }
+
+                        a:active,
+                        a:hover {
+                            color: $base;
+
+                            &::after {
+                                background-color: $base;
+                            }
+                        }
+                    }
+
+                    li:nth-child(1) {
+                        margin-top: 0;
+                        @include lg {
+                            margin-top: 15px;
+                        }
+                    }
+                }
             }
         }
     }
 }
 
-
 #burger-icon {
-    background-color: $white;
     border: none;
     font-size: rem-calc(18);
     outline: none;
     padding: 8px;
-    // position: fixed;
-    // right: 20px;
-    // top: 20px;
-    // z-index: 100;
+    @include lg {
+        background-color: $tbase;
+    }
+
+    i {
+        transition: 0.25s;
+    }
 }
 
 #burger-icon:hover {
-    background-color: $black;
-    color: $white;
+    i {
+        color: $white;
+    }
 }

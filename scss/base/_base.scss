@@ -28,7 +28,13 @@ a:visited {
     transition: 0.25s;
 }
 
-main {
+a:hover,
+a:link {
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+body {
     background-color: $base;
 }
 
@@ -60,25 +66,25 @@ main {
             background-size: rem-calc(60);
             height: rem-calc(60);
             left: 6.5%;
-            top: 23.5%;
+            top: 26%;
         }
         @include md {
             background-size: rem-calc(75);
             height: rem-calc(75);
             left: 6%;
-            top: 31%;
+            top: 35%;
         }
         @include lg {
             background-size: rem-calc(100);
             height: rem-calc(100);
             left: 5%;
-            top: 49%;
+            top: 42%;
         }
         @include xl {
             background-size: rem-calc(120);
             height: rem-calc(120);
             left: 50%;
-            top: 590px;
+            top: 420px;
             transform: translateX(-480px);
         }
     }
