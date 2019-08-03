@@ -541,6 +541,49 @@ header div nav {
         header div nav ul li:nth-child(1) {
           margin-top: 15px; } }
 
+a:hover,
+a:link {
+  text-decoration: none;
+  transition: o 0.25s; }
+
+#off-canvas-container {
+  /* -------------
+        Here are the properties you can changes for the off-canvas navigation-slide
+    ------------- */
+  /* close btn */
+  /* close btn */ }
+  #off-canvas-container button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5625rem;
+    margin-bottom: 20px;
+    text-align: right;
+    transition: 0.25s;
+    width: 100%; }
+  #off-canvas-container button:hover {
+    color: red; }
+  #off-canvas-container ul li {
+    margin-bottom: 20px; }
+    #off-canvas-container ul li a:link,
+    #off-canvas-container ul li a:visited {
+      color: #fff; }
+    #off-canvas-container ul li a:active,
+    #off-canvas-container ul li a:hover {
+      color: blue; }
+
+#burger-icon {
+  background-color: #fff;
+  border: none;
+  font-size: 1.125rem;
+  outline: none;
+  padding: 8px; }
+
+#burger-icon:hover {
+  background-color: #000;
+  color: #fff; }
+
 /* =============
     Header
 ============= */
@@ -602,13 +645,6 @@ header section:nth-child(2) button {
       header section:nth-child(2) button i {
         font-size: 3.125rem;
         margin-left: 22px; } }
-
-header nav {
-  display: none;
-  grid-area: nav; }
-  @media (min-width: 890px) {
-    header nav {
-      display: block !important; } }
 
 /* =============
     Footer

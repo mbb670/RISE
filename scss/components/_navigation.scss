@@ -97,3 +97,80 @@ header {
         }
     }
 }
+
+
+
+
+
+
+a:hover,
+a:link {
+    text-decoration: none;
+    transition: o.25s;
+}
+
+
+#off-canvas-container{
+    /* -------------
+        Here are the properties you can changes for the off-canvas navigation-slide
+    ------------- */
+
+    // background-color: $black;
+    // grid-template-columns: 10px auto 10px;
+    // padding-top: 20px;
+
+    // width of the off canvas navigation
+    // width: 200px;
+
+
+    /* close btn */
+    button {
+        background-color: transparent;
+        border: none;
+        color: $white;
+        cursor: pointer;
+        font-size: rem-calc(25);
+        margin-bottom: 20px;
+        text-align: right;
+        transition: 0.25s;
+        width: 100%;
+    }
+
+    /* close btn */
+    button:hover {
+        color: red;
+    }
+
+    ul {
+        li {
+            margin-bottom: 20px;
+            a:link,
+            a:visited {
+                color: #fff;
+            }
+
+            a:active,
+            a:hover {
+                color: blue;
+            }
+        }
+    }
+}
+
+
+#burger-icon {
+    background-color: $white;
+    border: none;
+    font-size: rem-calc(18);
+    outline: none;
+    padding: 8px;
+    // position: fixed;
+    // right: 20px;
+    // top: 20px;
+    // z-index: 100;
+}
+
+#burger-icon:hover {
+    background-color: $black;
+    color: $white;
+}

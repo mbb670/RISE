@@ -24,9 +24,51 @@
 
   <script src="js/scripts.js"></script>
 
+
+
+  <!-- Your options for data-navigation-position is: left | right -->
+  <!-- Your options for data-navigation-slide is: over | under | push -->
+  <section id="off-canvas-container" data-navigation-position="right" data-navigation-slide="push">
+      <div>
+          <button>
+              <i class="far fa-times-circle" id="close-btn"></i>
+          </button>
+          <div id="nav-container">
+              <nav data-nav="main-navigation">
+
+                  <ul>
+                      <li><a href="#hero-1">DONATE</a></li>
+                      <li><a href="#hero-1">SIGN UP</a></li>
+                      <li><a href="#about">LEARN</a></li>
+                  </ul>
+              </nav>
+          </div>
+      </div>
+  </section>
+
+
+  <!-- The header needs to be outside of the main tag if you are going to position fix it. -->
+  <header data-fixed="fixed-item" class="content-grid">
+      <div>
+          <section>
+              <img src="img/header/logo.svg" alt="RISE Logo">
+          </section>
+          <!-- burger icon -->
+          <section id="burger-icon" >
+              <i class="fas fa-bars"></i>
+          </section>
+      </div>
+  </header>
+
+  <!--
+  *************** Your website content goes here! ***************
+  -->
+
+
+
 <main>
 
-    <header class="content-grid">
+    <!-- <header class="content-grid">
         <div>
             <section>
                 <img src="img/header/logo.svg" alt="RISE Logo">
@@ -45,8 +87,12 @@
             </nav>
 
         </div>
-    </header>
+    </header> -->
 
+
+    <!-- overlay for the view when the menu is visible. Please don't move -->
+    <div class="js-off-canvas-overlay" id="overlay"></div>
+    <!-- overlay for the view when the menu is visible. Please don't move -->
 
 
     <section id="hero-1">

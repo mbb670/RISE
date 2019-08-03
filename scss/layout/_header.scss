@@ -70,11 +70,23 @@ header {
         }
     }
 
-    nav {
-        display: none;
-        grid-area: nav;
-        @include lg {
-            display: block !important;
-        }
-    }
+    // nav {
+    //     display: none;
+    //     grid-area: nav;
+    //     @include lg {
+    //         display: block !important;
+    //     }
+    // }
 }
+
+// header{
+//     background-color: $white;
+//     width: 100%;
+//     position: fixed;
+//     z-index: 100;
+//     display: flex;
+//     justify-content: flex-end;
+//     >div{
+//         padding: 10px;
+//     }
+// }
