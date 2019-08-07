@@ -362,13 +362,13 @@ main {
         background-size: 3.75rem;
         height: 3.75rem;
         left: 6.5%;
-        top: 24.8%; } }
+        top: 22%; } }
     @media (min-width: 675px) {
       .content-grid > aside {
         background-size: 4.6875rem;
         height: 4.6875rem;
         left: 6%;
-        top: 33%; } }
+        top: 30%; } }
     @media (min-width: 890px) {
       .content-grid > aside {
         background-size: 6.25rem;

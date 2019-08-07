@@ -60,13 +60,13 @@ main {
             background-size: rem-calc(60);
             height: rem-calc(60);
             left: 6.5%;
-            top: 24.8%;
+            top: 22%;
         }
         @include md {
             background-size: rem-calc(75);
             height: rem-calc(75);
             left: 6%;
-            top: 33%;
+            top: 30%;
         }
         @include lg {
             background-size: rem-calc(100);
