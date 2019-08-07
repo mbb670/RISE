@@ -502,6 +502,9 @@ textarea {
       width: 100%; }
       #off-canvas-container > div #nav-container nav ul {
         margin-right: 8px; }
+        @media (min-width: 890px) {
+          #off-canvas-container > div #nav-container nav ul {
+            margin-right: 20px; } }
         #off-canvas-container > div #nav-container nav ul li {
           display: flex;
           justify-content: flex-end;

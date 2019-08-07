@@ -50,6 +50,10 @@
                 ul {
                     margin-right: 8px;
 
+                    @include lg{
+                        margin-right: 20px;
+                    }
+
                     li {
                         display: flex;
                         justify-content: flex-end;
