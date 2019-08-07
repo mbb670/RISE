@@ -362,13 +362,13 @@ main {
         background-size: 3.75rem;
         height: 3.75rem;
         left: 6.5%;
-        top: 23.5%; } }
+        top: 24.8%; } }
     @media (min-width: 675px) {
       .content-grid > aside {
         background-size: 4.6875rem;
         height: 4.6875rem;
         left: 6%;
-        top: 31%; } }
+        top: 33%; } }
     @media (min-width: 890px) {
       .content-grid > aside {
         background-size: 6.25rem;
@@ -588,20 +588,18 @@ header section:nth-child(1) img {
 header section:nth-child(2) button {
   background-color: transparent;
   border: none;
-  outline: none; }
-  header section:nth-child(2) button i {
-    color: #191D4A;
-    font-size: 2.1875rem;
-    margin-left: 6px;
-    margin-top: 6px; }
-    @media (min-width: 500px) {
-      header section:nth-child(2) button i {
-        font-size: 2.5rem;
-        margin-left: 9px; } }
-    @media (min-width: 675px) {
-      header section:nth-child(2) button i {
-        font-size: 3.125rem;
-        margin-left: 22px; } }
+  outline: none;
+  margin-top: 8px;
+  margin-left: 6px; }
+  @media (min-width: 500px) {
+    header section:nth-child(2) button {
+      transform: scale(1.1);
+      margin-left: 8px; } }
+  @media (min-width: 675px) {
+    header section:nth-child(2) button {
+      transform: scale(1.3);
+      margin-left: 25px;
+      margin-top: 15px; } }
 
 header nav {
   display: none;
