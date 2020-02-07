@@ -5,6 +5,7 @@ header {
 
     div {
         nav {
+            visibility: hidden;
             background: $tdrkblu;
             display: block;
             left: 0;
@@ -15,6 +16,7 @@ header {
             @include lg {
                 position: absolute;
                 background-color:$tbase;
+                visibility: visible;
             }
 
             ul {

@@ -7,15 +7,18 @@ $(document).ready(function() {
 
     function mouseClick() {
 
-        console.log("click");
+        // console.log("click");
         if (isVisible === false) {
             $nav.show();
+            TweenMax.set($nav, {visibility:"visible"});
             isVisible = true;
         } else {
             $nav.hide();
+            TweenMax.set($nav, {visibility:"hidden"});
             isVisible = false;
         }
     }
+
 
     $burger.on("click", mouseClick);
     // close the mobile menu when menu link is clicked
@@ -46,7 +49,7 @@ $(document).ready(function() {
     var ifClicked = false;
 
     function burgerClick() {
-        console.log("clicks");
+        // console.log("clicks");
         if (ifClicked === false) {
             TweenMax.to($topLine, animationSpeed, {
                 rotation: 45,

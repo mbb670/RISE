@@ -457,6 +457,7 @@ textarea {
     Navigation
 ============= */
 header div nav {
+  visibility: hidden;
   background: rgba(29, 25, 74, 0.75);
   display: block;
   left: 0;
@@ -467,7 +468,8 @@ header div nav {
   @media (min-width: 890px) {
     header div nav {
       position: absolute;
-      background-color: rgba(0, 212, 255, 0.75); } }
+      background-color: rgba(0, 212, 255, 0.75);
+      visibility: visible; } }
   header div nav ul {
     margin-bottom: 20px;
     padding: 25px; }
@@ -657,6 +659,7 @@ footer > div {
       height: 53.1875rem;
       margin-top: 40px; } }
   #hero-1 ul {
+    visibility: hidden;
     left: 60%;
     position: absolute;
     top: 85%; }
